@@ -1,0 +1,7 @@
+ 
+
+actor HellKnight2 : HellKnight
+{
+	DropItem "VeryHardMonsterDrop", 75
+	DropItem "HardMonsterDropOrClassDrop", 75
+}

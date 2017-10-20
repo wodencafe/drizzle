@@ -1,0 +1,28 @@
+ 
+
+actor NetherDarkImp2 : NetherDarkImp 
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop", 75
+	DropItem "MediumMonsterDropOrClassDrop", 75
+}
+actor StealthNetherDarkImp2 : NetherDarkImp2 
+{
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthNetherDarkImp3 : NetherDarkImp2
+{
+	RenderStyle Fuzzy
+}
+actor StealthNetherDarkImp4 : NetherDarkImp2
+{
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthNetherDarkImp5 : NetherDarkImp2
+{
+	RenderStyle Add
+	Alpha 0.5
+}

@@ -1,0 +1,4 @@
+actor LostSoulReplacer : RandomSpawner replaces LostSoul
+{
+    DropItem "LostSoulVariantDrop", 255, 1
+}

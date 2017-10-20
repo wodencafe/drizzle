@@ -1,0 +1,28 @@
+
+actor ShotgunGuy2 : ShotgunGuy
+{
+	+STRIFEDAMAGE
+	DropItem "EasyMonsterDropOrClassDrop", 75
+	DropItem "ShotgunZombieStuffDrop", 75
+	
+}
+actor StealthShotgunGuy2 : ShotgunGuy2
+{
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthShotgunGuy3 : ShotgunGuy2
+{
+	RenderStyle Fuzzy
+}
+actor StealthShotgunGuy4 : ShotgunGuy2
+{
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthShotgunGuy5 : ShotgunGuy2
+{
+	RenderStyle Add
+	Alpha 0.5
+} 

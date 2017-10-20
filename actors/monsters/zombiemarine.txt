@@ -1,0 +1,8 @@
+ 
+
+actor ZombieMarine2 : ZombieMarine 
+{
+	+STRIFEDAMAGE
+	DropItem "ZombieStuffDrop", 75
+	DropItem "MediumMonsterDropOrClassDrop", 75
+}

@@ -1,0 +1,30 @@
+
+
+actor ChainsawZombie2 : ChainsawZombie 
+{
+	+STRIFEDAMAGE
+	DropItem "EasyMonsterDropOrClassDrop", 75
+	DropItem "ZombieStuffDrop", 75
+}
+actor StealthChainsawZombie2 : ChainsawZombie2 
+{
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthChainsawZombie3 : ChainsawZombie2
+{
+	RenderStyle Fuzzy
+}
+actor StealthChainsawZombie4 : ChainsawZombie2
+{
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthChainsawZombie5 : ChainsawZombie2
+{
+	RenderStyle Add
+	Alpha 0.5
+}
+
+ 

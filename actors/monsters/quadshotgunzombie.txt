@@ -1,0 +1,8 @@
+ 
+
+actor QuadShotgunZombie2 : QuadShotgunZombie 
+{
+	+STRIFEDAMAGE
+	DropItem "MediumMonsterDropOrClassDrop", 75
+	DropItem "ShotgunZombieStuffDrop", 75
+}

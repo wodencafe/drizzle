@@ -1,0 +1,29 @@
+ 
+actor FreezeRifleGuy2 : FreezeRifleGuy 
+{
+
+	+STRIFEDAMAGE
+	DropItem "FreezeRifleZombieStuffDrop", 75
+	DropItem "MediumMonsterDropOrClassDrop", 75
+}
+
+actor StealthFreezeRifleGuy2 : FreezeRifleGuy2
+{
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthFreezeRifleGuy3 : FreezeRifleGuy2
+{
+	RenderStyle Fuzzy
+}
+actor StealthFreezeRifleGuy4 : FreezeRifleGuy2
+{
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthFreezeRifleGuy5 : FreezeRifleGuy2
+{
+	RenderStyle Add
+	Alpha 0.5
+}

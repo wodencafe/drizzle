@@ -1,0 +1,29 @@
+actor ESoul2 : ESoul 
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop", 75
+	DropItem "MediumMonsterDropOrClassDrop", 75
+}
+actor StealthESoul2 : ESoul2 
+{
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthESoul3 : ESoul2
+{
+	RenderStyle Fuzzy
+}
+actor StealthESoul4 : ESoul2
+{
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthESoul5 : ESoul2
+{
+	RenderStyle Add
+	Alpha 0.5
+}
+
+
+ 

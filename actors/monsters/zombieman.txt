@@ -1,0 +1,35 @@
+ 
+
+actor ZombieMan2 : ZombieMan 
+{
+	+STRIFEDAMAGE
+	DropItem "EasyMonsterDropOrClassDrop", 75
+	DropItem "ZombieStuffDrop", 75
+}
+
+
+actor StealthZombieManBase : ZombieMan2
+{
+	DropItem "MediumMonsterDropOrClassDrop", 75
+	DropItem "ZombieStuffDrop", 75
+}
+actor StealthZombieMan2 : StealthZombieManBase
+{
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthZombieMan3 : StealthZombieManBase
+{
+	RenderStyle Fuzzy
+}
+actor StealthZombieMan4 : StealthZombieManBase
+{
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthZombieMan5 : StealthZombieManBase
+{
+	RenderStyle Add
+	Alpha 0.5
+}

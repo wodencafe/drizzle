@@ -1,0 +1,7 @@
+
+actor XimRocketGuy2 : XimRocketGuy 
+{
+	+STRIFEDAMAGE
+	DropItem "RocketZombieStuffDrop", 75
+	DropItem "MediumMonsterDropOrClassDrop", 75
+}

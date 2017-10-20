@@ -1,0 +1,27 @@
+ 
+actor VoidDarkImp2 : VoidDarkImp 
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop", 75
+	DropItem "MediumMonsterDropOrClassDrop", 75
+}
+actor StealthVoidDarkImp2 : VoidDarkImp2 
+{
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthVoidDarkImp3 : VoidDarkImp2
+{
+	RenderStyle Fuzzy
+}
+actor StealthVoidDarkImp4 : VoidDarkImp2
+{
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthVoidDarkImp5 : VoidDarkImp2
+{
+	RenderStyle Add
+	Alpha 0.5
+}

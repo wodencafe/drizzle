@@ -1,0 +1,28 @@
+
+actor LostSoul2 : LostSoul 
+{
+	+STRIFEDAMAGE
+	// Give two shots at a drop
+	DropItem "EasyMonsterDropOrClassDrop", 75
+	DropItem "MediumMonsterDropOrClassDrop", 75
+}
+actor StealthLostSoul2 : LostSoul2
+{
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthLostSoul3 : LostSoul2
+{
+	RenderStyle Fuzzy
+}
+actor StealthLostSoul4 : LostSoul2
+{
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthLostSoul5 : LostSoul2
+{
+	RenderStyle Add
+	Alpha 0.5
+}

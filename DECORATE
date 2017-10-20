@@ -1,4 +1,3 @@
-#include actors/monsters.txt`
 actor Engineer : DoomPlayer
 {
 	Player.DisplayName "Engineer"
@@ -53,122 +52,7 @@ actor Demolitions : DoomPlayer
 }*/
 
 // <MONSTERS>
-actor BeamGuy2 : BeamGuy 
-{
-	+STRIFEDAMAGE
-	DropItem "EnergyZombieStuffDrop", 75
-	DropItem "MediumMonsterDropOrClassDrop", 75
-}
-actor XimRocketGuy2 : XimRocketGuy 
-{
-	+STRIFEDAMAGE
-	DropItem "RocketZombieStuffDrop", 75
-	DropItem "MediumMonsterDropOrClassDrop", 75
-}
-actor PNZombie2 : PNZombie 
-{
 
-	+STRIFEDAMAGE
-	DropItem "ZombieStuffDrop", 75
-	DropItem "EasyMonsterDropOrClassDrop", 75
-}
-actor Cacodemon2 : Cacodemon 
-{
-	+STRIFEDAMAGE
-	// Give two shots at a drop
-	DropItem "HardMonsterDropOrClassDrop", 75
-	DropItem "MediumMonsterDropOrClassDrop", 75
-}
-
-
-
-
-
-
-actor ChainsawZombie2 : ChainsawZombie 
-{
-	+STRIFEDAMAGE
-	DropItem "EasyMonsterDropOrClassDrop", 75
-	DropItem "ZombieStuffDrop", 75
-}
-actor StealthChainsawZombie2 : ChainsawZombie2 
-{
-	RenderStyle Stencil
-	StencilColor black
-	Alpha 0.5
-}
-actor StealthChainsawZombie3 : ChainsawZombie2
-{
-	RenderStyle Fuzzy
-}
-actor StealthChainsawZombie4 : ChainsawZombie2
-{
-	RenderStyle Translucent
-	Alpha 0.5
-}
-actor StealthChainsawZombie5 : ChainsawZombie2
-{
-	RenderStyle Add
-	Alpha 0.5
-}
-
-
-
-actor StealthCacodemon2 : Cacodemon2
-{
-	RenderStyle Stencil
-	StencilColor black
-	Alpha 0.5
-}
-actor StealthCacodemon3 : Cacodemon2
-{
-	RenderStyle Fuzzy
-}
-actor StealthCacodemon4 : Cacodemon2
-{
-	RenderStyle Translucent
-	Alpha 0.5
-}
-actor StealthCacodemon5 : Cacodemon2
-{
-	RenderStyle Add
-	Alpha 0.5
-}
-
-actor FreezeRifleGuy2 : FreezeRifleGuy 
-{
-
-	+STRIFEDAMAGE
-	DropItem "FreezeRifleZombieStuffDrop", 75
-	DropItem "MediumMonsterDropOrClassDrop", 75
-}
-
-actor StealthFreezeRifleGuy2 : FreezeRifleGuy2
-{
-	RenderStyle Stencil
-	StencilColor black
-	Alpha 0.5
-}
-actor StealthFreezeRifleGuy3 : FreezeRifleGuy2
-{
-	RenderStyle Fuzzy
-}
-actor StealthFreezeRifleGuy4 : FreezeRifleGuy2
-{
-	RenderStyle Translucent
-	Alpha 0.5
-}
-actor StealthFreezeRifleGuy5 : FreezeRifleGuy2
-{
-	RenderStyle Add
-	Alpha 0.5
-}
-
-
-actor DeadDemon2 : DeadDemon 
-{
-	+STRIFEDAMAGE
-}
 actor Spectre2 : Spectre 
 {
 	+STRIFEDAMAGE
@@ -294,110 +178,6 @@ actor StealthVoidDarkImp5 : VoidDarkImp2
 	Alpha 0.5
 }
 
-
-actor PainElemental2 : PainElemental 
-{
-	+STRIFEDAMAGE
-	DropItem "HardMonsterDropOrClassDrop", 75
-	DropItem "HardMonsterDropOrClassDrop", 75
-}
-actor Revenant2 : Revenant 
-{
-	+STRIFEDAMAGE
-	DropItem "HardMonsterDropOrClassDrop", 75
-	DropItem "MediumMonsterDropOrClassDrop", 75
-}
-actor BaronOfHell2 : BaronOfHell 
-{
-	+STRIFEDAMAGE
-	DropItem "HardMonsterDropOrClassDrop", 75
-	DropItem "HardMonsterDropOrClassDrop", 75
-}
-
-actor ZombieMan2 : ZombieMan 
-{
-	+STRIFEDAMAGE
-	DropItem "EasyMonsterDropOrClassDrop", 75
-	DropItem "ZombieStuffDrop", 75
-}
-actor ShotgunGuy2 : ShotgunGuy
-{
-	+STRIFEDAMAGE
-	DropItem "EasyMonsterDropOrClassDrop", 75
-	DropItem "ShotgunZombieStuffDrop", 75
-	
-}
-actor StealthShotgunGuy2 : ShotgunGuy2
-{
-	RenderStyle Stencil
-	StencilColor black
-	Alpha 0.5
-}
-actor StealthShotgunGuy3 : ShotgunGuy2
-{
-	RenderStyle Fuzzy
-}
-actor StealthShotgunGuy4 : ShotgunGuy2
-{
-	RenderStyle Translucent
-	Alpha 0.5
-}
-actor StealthShotgunGuy5 : ShotgunGuy2
-{
-	RenderStyle Add
-	Alpha 0.5
-}
-actor DoomImp2 : DoomImp 
-{
-	+STRIFEDAMAGE
-	DropItem "EasyMonsterDropOrClassDrop", 75
-	DropItem "EasyMonsterDropOrClassDrop", 75
-}
-actor StealthDoomImp2 : DoomImp2
-{
-	RenderStyle Stencil
-	StencilColor black
-	Alpha 0.5
-}
-actor StealthDoomImp3 : DoomImp2
-{
-	RenderStyle Fuzzy
-}
-actor StealthDoomImp4 : DoomImp2
-{
-	RenderStyle Translucent
-	Alpha 0.5
-}
-actor StealthDoomImp5 : DoomImp2
-{
-	RenderStyle Add
-	Alpha 0.5
-}
-actor StealthZombieManBase : ZombieMan2
-{
-	DropItem "MediumMonsterDropOrClassDrop", 75
-	DropItem "ZombieStuffDrop", 75
-}
-actor StealthZombieMan2 : StealthZombieManBase
-{
-	RenderStyle Stencil
-	StencilColor black
-	Alpha 0.5
-}
-actor StealthZombieMan3 : StealthZombieManBase
-{
-	RenderStyle Fuzzy
-}
-actor StealthZombieMan4 : StealthZombieManBase
-{
-	RenderStyle Translucent
-	Alpha 0.5
-}
-actor StealthZombieMan5 : StealthZombieManBase
-{
-	RenderStyle Add
-	Alpha 0.5
-}
 
 actor QuadShotgunZombie2 : QuadShotgunZombie 
 {
@@ -557,6 +337,7 @@ actor DemonReplacer : RandomSpawner replaces Demon
 
 actor CacodemonReplacer : RandomSpawner replaces Cacodemon
 {
+	
     DropItem "Cacodemon2", 255, 3
     DropItem "Cacolich2", 255, 2
     DropItem "EnhancedCacodemon2", 255, 2
@@ -568,10 +349,7 @@ actor CacodemonReplacer : RandomSpawner replaces Cacodemon
     DropItem "StealthCacodemon5", 255, 1
 }
 
-actor LostSoulReplacer : RandomSpawner replaces LostSoul
-{
-    DropItem "LostSoulVariantDrop", 255, 1
-}
+
 
 // </MONSTER REPLACERS>
 
@@ -1061,6 +839,24 @@ actor LuckyArmorDrop : RandomSpawner
 
 // <ITEM VARIANT DROPS>
 
+actor RandomItemDrop : RandomSpawner
+{
+	DropItem "FlareBox", 255, 1
+	DropItem "SoulSphere", 255, 1
+	DropItem "BlurSphere", 255, 1
+	DropItem "InvulnerabilitySphere", 255, 1
+	DropItem "Infrared", 255, 1
+	DropItem "SummonSphere", 255, 1
+	DropItem "TerrorSphere", 255, 1
+	DropItem "AmmoSphere", 255, 1
+	DropItem "RegenSphere", 255, 1
+	DropItem "ShieldSphere", 255, 1
+	DropItem "FamiliarSummon", 255, 1
+	DropItem "TechArmor", 255, 1
+	DropItem "SentryBox", 255, 1
+	DropItem "Megasphere", 255, 1
+	DropItem "Berserk", 255, 1
+}
 
 // </ITEM VARIANT DROPS>
 

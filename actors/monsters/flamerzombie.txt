@@ -1,0 +1,8 @@
+ 
+
+actor FlamerZombie2 : FlamerZombie 
+{
+	+STRIFEDAMAGE
+	DropItem "MediumMonsterDropOrClassDrop", 75
+	DropItem "EnergyZombieStuffDrop", 75
+}

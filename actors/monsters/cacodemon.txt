@@ -1,0 +1,29 @@
+ 
+actor Cacodemon2 : Cacodemon 
+{
+	+STRIFEDAMAGE
+	// Give two shots at a drop
+	DropItem "HardMonsterDropOrClassDrop", 75
+	DropItem "MediumMonsterDropOrClassDrop", 75
+}
+
+actor StealthCacodemon2 : Cacodemon2
+{
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthCacodemon3 : Cacodemon2
+{
+	RenderStyle Fuzzy
+}
+actor StealthCacodemon4 : Cacodemon2
+{
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthCacodemon5 : Cacodemon2
+{
+	RenderStyle Add
+	Alpha 0.5
+}

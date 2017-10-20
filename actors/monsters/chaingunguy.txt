@@ -1,0 +1,8 @@
+ 
+
+actor ChaingunGuy2 : ChaingunGuy
+{
+	+STRIFEDAMAGE
+	DropItem "ChaingunZombieStuffDrop", 75
+	DropItem "MediumMonsterDropOrClassDrop", 75
+}

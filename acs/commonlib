@@ -1,0 +1,87 @@
+#library "commonlib" // Name of the library
+#include "zcommon.acs"
+
+script 1 ENTER
+{
+} 
+
+script "TSPGetGameSkill" (void)
+{
+    print(s:"Hello!");
+  SetResultValue(GameSkill());
+}
+script "ExplodeZombie" (void)
+{
+    print(s:"Hello!");
+    SetResultValue(GetCVar("explodey_zombies"));
+}
+script "ClassDrop" (void)
+{
+  Switch(PlayerClass(0))
+  {
+    case 0:
+	SetActorPosition(0, GetActorX(0), GetActorY(0), (GetActorZ(0) - 12.0), 0);
+	DropItem(0, "EngineerDrop");
+    break;
+  
+    case 1:
+	SetActorPosition(0, GetActorX(0), GetActorY(0), (GetActorZ(0) - 12.0), 0);
+	DropItem(0, "DemolitionsDrop");
+    break;
+	
+	default:
+    break;
+  }
+
+}
+script "ACS_ClassShellWeaponsDrop" (void)
+{
+  Switch(PlayerClass(0))
+  {
+    case 0:
+	SetActorPosition(0, GetActorX(0), GetActorY(0), (GetActorZ(0) - 12.0), 0);
+	DropItem(0, "EngineerShellWeapons");
+    break;
+  
+    case 1:
+	SetActorPosition(0, GetActorX(0), GetActorY(0), (GetActorZ(0) - 12.0), 0);
+	DropItem(0, "StandardShellWeapons");
+    break;
+	
+	default:
+    break;
+  }
+
+}
+
+script "ACS_ClassExplosiveWeaponsDrop" (void)
+{
+  Switch(PlayerClass(0))
+  {
+    case 0:
+	SetActorPosition(0, GetActorX(0), GetActorY(0), (GetActorZ(0) - 12.0), 0);
+	DropItem(0, "StandardExplosiveWeapons");
+    break;
+  
+    case 1:
+	SetActorPosition(0, GetActorX(0), GetActorY(0), (GetActorZ(0) - 12.0), 0);
+	DropItem(0, "DemolitionsExplosiveWeapons");
+    break;
+	
+	default:
+    break;
+  }
+  }
+	script "ACS_GetSpawnChance" (void)
+	{
+		int rand = (Random (0, 255));
+		int cvar = GetCVar("SpawnChance");
+		if (cvar > rand)
+		{
+			SetResultValue(1);
+		}
+		else
+		{
+			SetResultValue(0);
+		}
+	}

@@ -1,0 +1,62 @@
+
+actor PlasmaDemon2 : PlasmaDemon
+{
+	+STRIFEDAMAGE
+	DropItem "MediumMonsterSpawnOrClassSpawn", 255
+	DropItem "MediumMonsterSpawnOrClassSpawn", 255
+	DropItem "HealthBonus", 89
+	DropItem "ArmorBonus", 89
+	DropItem "Cell", 89
+	DropItem "Clip", 89
+	DropItem "Shell", 89
+	DropItem "RocketAmmo", 89
+	States
+    {
+	   Spawn:
+		  DIMP AB 8 A_Look
+		  Loop
+	   See:
+		  DIMP AABBCCDD 2 A_Chase
+		  TNT1 A 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+		  Loop
+	   Dodge: 			
+		  DIMP ABCD 2 A_Chase("Melee", "Missile", CHF_FASTCHASE)
+		  TNT1 A 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+		  TNT1 A 0 A_CheckLOF( "Missile", CLOFF_IGNOREGHOST, 2000 )
+		  Goto See
+	   Melee:
+		  DIMP EF 8 A_FaceTarget
+		  DIMP G 8 A_MeleeAttack
+		  Goto See
+	   Missile:
+		  TNT1 A 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+		  DIMP P 10 A_FaceTarget
+		  TNT1 A 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+		  DIMP Q 0 A_Jump(32, "Missile2")
+		  DIMP Q 6 A_ComboAttack 
+		  TNT1 A 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+		  DIMP Q 0 A_Jump(96, "Missile2")
+		  Goto See
+	   Missile2:
+	      DIMP Q 4 A_CustomMissile("ArachnotronPlasma",32,10,0,1) // Class, spawn height, offset, angle, aimmode
+		  TNT1 A 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+		  DIMP Q 0 A_Jump(32, "See")
+		  DIMP Q 0 A_CheckLOF("Missile", CLOFF_IGNOREGHOST, 2000 )
+		  Goto See
+	   Pain:
+		  DIMP H 2
+		  DIMP H 2 A_Pain
+		  Goto See
+	   Death:
+		  DIMP I 6
+		  DIMP J 6 A_Scream
+		  DIMP K 4
+		  DIMP L 4 A_NoBlocking
+		  DIMP M 4
+		  DIMP N -1
+		  Stop
+	   Raise:
+		  DIMP NMLKJI 4
+		  Goto See
+    }
+}

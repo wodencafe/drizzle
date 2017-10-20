@@ -1,0 +1,164 @@
+actor NailBorg2 : NailBorg
+{
+	+STRIFEDAMAGE
+	DropItem "MediumMonsterSpawnOrClassSpawn", 255
+	DropItem "ZombieStuffSpawn", 128
+	DropItem "EnergyZombieStuffSpawn", 128
+	DropItem "HealthBonus", 89
+	DropItem "ArmorBonus", 89
+	DropItem "Cell", 89
+	DropItem "Clip", 89
+	DropItem "Shell", 89
+	DropItem "RocketAmmo", 89
+	States
+	{
+		See:
+			NLBG AA 4 A_Chase
+			NLBG A 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG A 0 A_PlaySound("Monsters/NBWalk")
+			NLBG BBCC 4 A_Chase
+			NLBG C 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG CC 0 A_PlaySound("Monsters/NBWalk")
+			NLBG DD 4 A_Chase
+			NLBG D 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG D 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			Loop
+		Dodge:
+			NLBG AA 4 A_Chase("Melee", "", CHF_FASTCHASE)
+			NLBG A 0 A_PlaySound("Monsters/NBWalk")
+			NLBG BBCC 4 A_Chase("Melee", "Missile", CHF_FASTCHASE)
+			NLBG CC 0 A_PlaySound("Monsters/NBWalk")
+			NLBG C 0 A_CheckLOF( "Missile2", CLOFF_IGNOREGHOST, 1500 )
+			NLBG DD 4 A_Chase("Melee", "Missile", CHF_FASTCHASE)
+			NLBG D 0 A_CheckLOF( "Missile2", CLOFF_IGNOREGHOST, 1500 )
+			Goto See
+		Melee:
+			NLBG E 5 A_FaceTarget
+			NLBG E 0 A_CheckLOF( "Melee1", CLOFF_IGNOREGHOST, 1500 )
+			Goto See
+		Melee1:
+			NLBG E 0 A_PlaySound("weapons/nailfire")
+			NLBG F 3 BRIGHT A_CustomMissile("BorgNail1", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG E 1 BRIGHT
+			NLBG E 0 A_PlaySound("weapons/nailfire")
+			NLBG F 3 BRIGHT A_CustomMissile("BorgNail1", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG E 0 A_JumpIfTargetOutsideMeleeRange("Missile")
+			NLBG E 1 A_MonsterRefire(130, "See") // About 50% chance to jump to "See" if target is out of sight.
+			Goto Melee
+		Missile:
+			NLBG E 5 A_FaceTarget
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 0 A_CheckLOF( "Missile1", CLOFF_IGNOREGHOST, 2000 )
+			Goto Dodge
+		Missile1:
+			NLBG E 0 A_Jump(96, "Missile2")
+			NLBG E 0 A_Jump(96, "Missile3")
+			NLBG E 0 A_PlaySound("weapons/nailfire")
+			NLBG F 3 BRIGHT A_CustomMissile("BorgNail1", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG E 1 BRIGHT
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 0 A_CheckLOF( 1, CLOFF_IGNOREGHOST, 2000 )
+			Goto Dodge
+			NLBG E 0 A_PlaySound("weapons/nailfire")
+			NLBG F 3 BRIGHT A_CustomMissile("BorgNail1", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG E 1 BRIGHT A_FaceTarget
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 0 A_CheckLOF( 1, CLOFF_IGNOREGHOST, 2000 )
+			Goto Dodge
+			NLBG E 0 A_PlaySound("weapons/nailfire")
+			NLBG F 3 BRIGHT A_CustomMissile("BorgNail1", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG E 1 BRIGHT A_FaceTarget
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 0 A_CheckLOF( 1, CLOFF_IGNOREGHOST, 2000 )
+			Goto Dodge
+			NLBG E 0 A_PlaySound("weapons/nailfire")
+			NLBG F 3 BRIGHT A_CustomMissile("BorgNail1", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG E 1 BRIGHT A_FaceTarget
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 0 A_CheckLOF( 1, CLOFF_IGNOREGHOST, 2000 )
+			Goto Dodge
+			NLBG E 0 A_PlaySound("weapons/nailfire")
+			NLBG F 3 BRIGHT A_CustomMissile("BorgNail1", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG E 1 BRIGHT A_FaceTarget
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 0 A_CheckLOF( 1, CLOFF_IGNOREGHOST, 2000 )
+			Goto Dodge
+			NLBG E 0 A_PlaySound("weapons/nailfire")
+			NLBG F 3 BRIGHT A_CustomMissile("BorgNail1", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG E 1 BRIGHT A_FaceTarget
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 0 A_CheckLOF(2, CLOFF_IGNOREGHOST, 2000 )
+			Goto Dodge
+			NLBG E 0 A_PlaySound("weapons/nailfire")
+			NLBG F 3 BRIGHT A_CustomMissile("BorgNail1", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG E 1 BRIGHT A_FaceTarget
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 0 A_CheckLOF( 1, CLOFF_IGNOREGHOST, 2000 )
+			Goto Dodge
+			NLBG E 0 A_PlaySound("weapons/nailfire")
+			NLBG F 3 BRIGHT A_CustomMissile("BorgNail1", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG E 1 BRIGHT
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 0 A_CheckLOF( 1, CLOFF_IGNOREGHOST, 2000 )
+			Goto Dodge
+			NLBG E 1 A_MonsterRefire(130, "See") // About 50% chance to jump to "See" if target is out of sight.
+			NLBG E 0 A_Jump(32, "See")
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			Goto Missile
+		Missile2:
+			NLBG E 5 A_FaceTarget
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 0 A_PlaySound("weapons/nailfire")
+			NLBG F 4 A_CustomMissile("BorgNail2", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG F 0 A_CustomMissile("BorgNail2", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG F 0 A_CustomMissile("BornNail2", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG F 0 A_CustomMissile("BorgNail2", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG F 0 BRIGHT A_CustomMissile("BorgCenterNail", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG E 10
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 1 A_MonsterRefire(130, "See") // About 50% chance to jump to "See" if target is out of sight.
+			NLBG E 0 A_Jump(32, "See")
+			Goto Missile   
+		Missile3:
+			NLBG E 10 A_FaceTarget
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 0 A_PlaySound("Weapons/NailBomb")
+			NLBG F 4 A_CustomMissile("BorgNailBomb2", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG E 10
+			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
+			NLBG E 1 A_MonsterRefire(130, "See") // About 50% chance to jump to "See" if target is out of sight.
+			NLBG E 0 A_CheckLOF("Missile", CLOFF_IGNOREGHOST, 1500 )
+			NLBG E 0 A_Jump(32, "See")
+			Goto Missile
+	}
+}
+
+actor StealthNailBorg2 : NailBorg2
+{
+	+SHADOW
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthNailBorg3 : NailBorg2
+{
+	+SHADOW
+	RenderStyle Fuzzy
+}
+actor StealthNailBorg4 : NailBorg2
+{
+	+SHADOW
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthNailBorg5 : NailBorg2
+{	
+	+SHADOW
+	RenderStyle Add
+	Alpha 0.5
+}
+
+Actor BorgNailBomb2 : BorgNailBomb replaces BorgNailBomb
+{
+	
+}

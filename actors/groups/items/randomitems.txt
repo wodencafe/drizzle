@@ -1,0 +1,18 @@
+actor RandomItemDrop : RandomSpawner
+{
+	DropItem "FlareBox", 255, 1
+	DropItem "SoulSphere", 255, 1
+	DropItem "BlurSphere", 255, 1
+	DropItem "InvulnerabilitySphere", 255, 1
+	DropItem "Infrared", 255, 1
+	DropItem "SummonSphere", 255, 1
+	DropItem "TerrorSphere", 255, 1
+	DropItem "AmmoSphere", 255, 1
+	DropItem "RegenSphere", 255, 1
+	DropItem "ShieldSphere", 255, 1
+	DropItem "FamiliarSummon", 255, 1
+	DropItem "TechArmor", 255, 1
+	DropItem "SentryBox", 255, 1
+	DropItem "Megasphere", 255, 1
+	DropItem "Berserk", 255, 1
+}

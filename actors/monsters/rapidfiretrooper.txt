@@ -1,0 +1,37 @@
+actor RapidFireTrooper2 : RapidFireTrooper
+{
+	+STRIFEDAMAGE
+	DropItem "EasyMonsterSpawnOrClassSpawn", 255
+	DropItem "ZombieStuffSpawn", 255
+	DropItem "HealthBonus", 89
+	DropItem "ArmorBonus", 89
+	DropItem "Cell", 89
+	DropItem "Clip", 89
+	DropItem "Shell", 89
+	DropItem "RocketAmmo", 89
+}
+
+actor StealthRapidFireTrooper2 : RapidFireTrooper2 
+{
+	+SHADOW
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthRapidFireTrooper3 : RapidFireTrooper2
+{
+	+SHADOW
+	RenderStyle Fuzzy
+}
+actor StealthRapidFireTrooper4 : RapidFireTrooper2
+{
+	+SHADOW
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthRapidFireTrooper5 : RapidFireTrooper2
+{	
+	+SHADOW
+	RenderStyle Add
+	Alpha 0.5
+}

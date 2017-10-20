@@ -1,0 +1,11 @@
+#include actors/monsters/nailborg.txt
+#include actors/monsters/revenant.txt
+#include actors/monsters/crash.txt
+#include actors/monsters/afrit.txt
+#include actors/monsters/plasmademon.txt
+#include actors/monsters/rapidfiretrooper.txt
+#include actors/monsters/sonicrailgunzombie.txt
+#include actors/monsters/lostsoul.txt
+#include actors/monsters/esoul.txt
+#include actors/monsters/devil.txt
+

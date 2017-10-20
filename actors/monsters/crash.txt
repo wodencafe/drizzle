@@ -1,0 +1,36 @@
+actor Crash3 : crash2
+{
+	+STRIFEDAMAGE
+	DropItem "MediumMonsterSpawnOrClassSpawn", 255
+	DropItem "EnergyZombieStuffSpawn", 255
+	DropItem "HealthBonus", 89
+	DropItem "ArmorBonus", 89
+	DropItem "Cell", 89
+	DropItem "Clip", 89
+	DropItem "Shell", 89
+	DropItem "RocketAmmo", 89
+}
+actor StealthCrash2 : Crash3 
+{
+	+SHADOW
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthCrash3 : Crash3
+{
+	+SHADOW
+	RenderStyle Fuzzy
+}
+actor StealthCrash4 : Crash3
+{
+	+SHADOW
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthCrash5 : Crash3
+{
+	+SHADOW
+	RenderStyle Add
+	Alpha 0.5
+}

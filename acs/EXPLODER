@@ -1,0 +1,7 @@
+#library "exploder"
+#include "zcommon.acs"
+
+script "ExplodeZombie" (void)
+{
+	SetResultValue(GetCVar("explodey_zombies"));
+}

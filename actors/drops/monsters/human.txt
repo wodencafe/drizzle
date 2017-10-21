@@ -3,6 +3,7 @@
 actor ZombieVariantDrop : RandomSpawner
 {
     DropItem "ZombieMan2", 255, 5
+    DropItem "FemaleZombie2", 255, 3
     DropItem "StealthZombieMan2", 255, 1
     DropItem "StealthZombieMan3", 255, 1
     DropItem "StealthZombieMan4", 255, 1
@@ -20,6 +21,7 @@ actor FreezeRifleGuyVariantDrop : RandomSpawner
 actor ShotgunGuyVariantDrop : RandomSpawner
 {
     DropItem "ShotgunGuy2", 255, 5
+    DropItem "FemaleSergeant2", 255, 3
     DropItem "StealthShotgunGuy2", 255, 1
     DropItem "StealthShotgunGuy3", 255, 1
     DropItem "StealthShotgunGuy4", 255, 1
@@ -39,17 +41,22 @@ actor ChainsawGuyVariantDrop : RandomSpawner
 actor HumanVariantDrop : RandomSpawner
 {
     DropItem "BeamGuy2", 255, 1
+    DropItem "RapidFireTrooper2", 255, 1
     DropItem "ChaingunGuy2", 255, 1
     DropItem "ChainsawGuyVariantDrop", 255, 1
     DropItem "FlamerZombie2", 255, 1
     DropItem "FreezeRifleGuyVariantDrop", 255, 1
+    DropItem "FemalePlasma2", 255, 1
     DropItem "PlasmaZombie2", 255, 1
     DropItem "PNZombie2", 255, 1
     DropItem "ShotgunGuyVariantDrop", 255, 1
     DropItem "SonicRailgunZombie2", 255, 1
+    DropItem "FemaleRail2", 255, 1
+    DropItem "ShadowTrooper2", 255, 1
     DropItem "XimRocketGuy", 255, 1
     DropItem "ZombieVariantDrop", 255, 1
     DropItem "ZombieMarine2", 255, 1
     DropItem "NailBorg2", 255, 1
     DropItem "ASGGuy2", 255, 1
+    DropItem "BlackHoleZombie2", 255, 1
 }

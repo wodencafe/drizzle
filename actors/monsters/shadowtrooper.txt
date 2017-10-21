@@ -1,0 +1,8 @@
+
+actor ShadowTrooper2 : ShadowTrooper
+{
+	+STRIFEDAMAGE
+	DropItem "MediumMonsterDropOrClassDrop"
+	DropItem "EnergyZombieStuffSpawn"
+	
+}

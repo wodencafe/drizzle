@@ -2,6 +2,7 @@
 #include actors/monsters/archvile.txt
 #include actors/monsters/beamguy.txt
 #include actors/monsters/baronofhell.txt
+#include actors/monsters/blackholezombie.txt
 #include actors/monsters/cacolich.txt
 #include actors/monsters/chaingunguy.txt
 #include actors/monsters/crash.txt
@@ -35,6 +36,7 @@
 #include actors/monsters/rapidfiretrooper.txt
 #include actors/monsters/revenant.txt
 #include actors/monsters/rocketguy.txt
+#include actors/monsters/shadowtrooper.txt
 #include actors/monsters/shotgunguy.txt
 #include actors/monsters/sonicrailgunzombie.txt
 #include actors/monsters/soulharvester.txt

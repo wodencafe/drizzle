@@ -1,0 +1,12 @@
+actor BlackHoleZombie2 : BlackHoleZombie
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+	DropItem "HealthBonus", 89
+	DropItem "ArmorBonus", 89
+	DropItem "Cell", 89
+	DropItem "Clip", 89
+	DropItem "Shell", 89
+	DropItem "RocketAmmo", 89
+}

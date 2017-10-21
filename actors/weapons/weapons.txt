@@ -1,5 +1,4 @@
  
-
 actor GasGun2: GasGun
 {
     Weapon.SlotNumber 5
@@ -97,4 +96,25 @@ actor GatLaser2 : GatLaser
 {
     Weapon.SlotNumber 6
 	Tag "Gatling Laser"
+}
+actor UTNTFlamethrower2 : UTNTFlamethrower
+{
+    Weapon.SlotNumber 6
+	Tag "Flamethrower"
+}
+
+actor ElectroGun2 : ElectroGun
+{
+    Weapon.SlotNumber 6
+	Tag "ElectroGun"
+}
+actor BHGen2 : BHGen
+{
+    Weapon.SlotNumber 6
+	Tag "Black Hole Generator"
+}
+actor PlasmaRepeater2 : PlasmaRepeater
+{
+    Weapon.SlotNumber 6
+	Tag "Plasma Repeater"
 }

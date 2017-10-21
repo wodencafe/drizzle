@@ -9,4 +9,5 @@ actor ShotgunGuyReplacer : RandomSpawner replaces ShotgunGuy
     DropItem "DoomImpVariantDrop", 255, 1
     DropItem "DemonVariantDrop", 255, 1
     DropItem "LostSoulVariantDrop", 255, 1
+    DropItem "SpecialMonsterVariantDrop", 255, 1
 }

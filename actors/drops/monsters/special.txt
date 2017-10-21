@@ -1,8 +1,9 @@
 actor SpecialMonsterVariantDrop : RandomSpawner
 {
-    DropItem "Afrit2", 255, 5
+    DropItem "Afrit2", 255, 1
     DropItem "Grell2", 255, 1
     DropItem "FleshWizard2", 255, 1
     DropItem "ArchVile2", 255, 1
     DropItem "Revenant2", 255, 1
+    DropItem "Nightmare2", 255, 1
 } 

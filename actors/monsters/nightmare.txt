@@ -1,0 +1,6 @@
+actor Nightmare2 : KDiZDNightmare
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}

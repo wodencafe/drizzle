@@ -1,7 +1,7 @@
  
 #include actors/base.txt
-#include actors/buffs.txt
 #include actors/class.txt
+#include actors/buffs.txt
 #include actors/drops.txt
 #include actors/monsters.txt
 #include actors/replacers.txt

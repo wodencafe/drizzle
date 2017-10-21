@@ -17,4 +17,5 @@ actor SentryDrop : RandomSpawner
     DropItem "SentryFlamerBox", 255, 1
     DropItem "SentryPlasmaBox", 255, 1
     DropItem "SentryFreezeBox", 255, 1
+    DropItem "SentryRailBox", 255, 1
 }

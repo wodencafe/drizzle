@@ -2,5 +2,6 @@
 
 actor DemonReplacer : RandomSpawner replaces Demon
 {
-    DropItem "DemonVariantDrop", 255, 1
+    DropItem "DemonVariantDrop", 255, 3
+    DropItem "SpecialMonsterVariantDrop", 255, 1
 }

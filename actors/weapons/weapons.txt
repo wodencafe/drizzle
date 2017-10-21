@@ -113,8 +113,3 @@ actor BHGen2 : BHGen
     Weapon.SlotNumber 6
 	Tag "Black Hole Generator"
 }
-actor PlasmaRepeater2 : PlasmaRepeater
-{
-    Weapon.SlotNumber 6
-	Tag "Plasma Repeater"
-}

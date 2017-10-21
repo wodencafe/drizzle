@@ -3,3 +3,4 @@
 #include actors/drops/monsters/demon.txt
 #include actors/drops/monsters/lostsoul.txt
 #include actors/drops/monsters/human.txt 
+#include actors/drops/monsters/special.txt 

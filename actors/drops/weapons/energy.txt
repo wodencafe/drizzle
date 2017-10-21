@@ -4,4 +4,7 @@ actor EnergyWeapons : RandomSpawner
     DropItem "PlasmaRifle2", 255, 3
     DropItem "UTNTFlamethrower2", 255, 1
     DropItem "Railgun2", 255, 1
+    DropItem "BHGen2", 255, 1
+    DropItem "ElectroGun2", 255, 1
+	
 } 

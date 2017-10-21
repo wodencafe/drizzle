@@ -26,6 +26,7 @@
 #include actors/monsters/mancubus.txt
 #include actors/monsters/nailborg.txt
 #include actors/monsters/namidarkimp.txt
+#include actors/monsters/nightmare.txt
 #include actors/monsters/netherdarkimp.txt
 #include actors/monsters/painelemental.txt
 #include actors/monsters/phaseimp.txt

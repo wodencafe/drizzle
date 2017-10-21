@@ -1,0 +1,7 @@
+ 
+actor FemalePlasma2 : FemalePlasma
+{
+	+STRIFEDAMAGE
+	DropItem "MediumMonsterDropOrClassDrop"
+	DropItem "PlasmaZombieStuffSpawn"
+}

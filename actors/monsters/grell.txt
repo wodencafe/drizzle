@@ -1,0 +1,7 @@
+ 
+actor Grell2: Grell
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}

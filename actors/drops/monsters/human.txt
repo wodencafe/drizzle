@@ -50,4 +50,6 @@ actor HumanVariantDrop : RandomSpawner
     DropItem "XimRocketGuy", 255, 1
     DropItem "ZombieVariantDrop", 255, 1
     DropItem "ZombieMarine2", 255, 1
+    DropItem "NailBorg2", 255, 1
+    DropItem "ASGGuy2", 255, 1
 }

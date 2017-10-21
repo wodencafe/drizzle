@@ -3,6 +3,5 @@
 actor HellKnightReplacer : RandomSpawner replaces HellKnight
 {
     DropItem "HellKnight2", 255, 1
-    DropItem "Cybruiser2", 255, 1
 
 }

@@ -1,0 +1,7 @@
+ 
+actor FemaleRail2 : FemaleRail
+{
+	+STRIFEDAMAGE
+	DropItem "EnergyZombieStuffSpawn"
+	DropItem "MediumMonsterDropOrClassDrop"
+}

@@ -45,11 +45,7 @@ actor VoidDarkImpVariantDrop : RandomSpawner
 actor DoomImpVariantDrop : RandomSpawner
 {
     DropItem "StandardDoomImpVariantDrop", 255, 1
-    DropItem "FrostImp2", 255, 1
-    DropItem "DevilVariantDrop", 255, 1
-    DropItem "DarkImpVariantDrop", 255, 1
-    DropItem "SoulHarvester2", 255, 1
-    DropItem "Afrit2", 255, 1
+    DropItem "SpecialDoomImpVariantDrop", 255, 1
 }
 
 actor StandardDoomImpVariantDrop : RandomSpawner
@@ -60,7 +56,16 @@ actor StandardDoomImpVariantDrop : RandomSpawner
     DropItem "StealthDoomImp4", 255, 1
     DropItem "StealthDoomImp5", 255, 1
 }
-
+actor SpecialDoomImpVariantDrop : RandomSpawner
+{
+    DropItem "DarkImpVariantDrop", 255, 1
+    DropItem "DevilVariantDrop", 255, 1
+    DropItem "FrostImp2", 255, 1
+    DropItem "PhaseImp2", 255, 1
+    DropItem "SoulHarvester2", 255, 1
+    DropItem "StealthFighter2", 255, 1
+    DropItem "StoneImp2", 255, 1
+}
 actor DevilVariantDrop : RandomSpawner
 {
     DropItem "StealthDevil2", 255, 1

@@ -2,5 +2,6 @@
 
 actor BaronOfHellReplacer : RandomSpawner replaces BaronOfHell
 {
-    DropItem "BaronOfHell2", 255, 1
+    DropItem "BaronOfHell2", 255, 3
+    DropItem "Cybruiser2", 255, 1
 }

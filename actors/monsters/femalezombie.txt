@@ -1,0 +1,6 @@
+ actor FemaleZombie2 : FemaleZombie
+ {
+	+STRIFEDAMAGE
+	DropItem "EasyMonsterDropOrClassDrop"
+	DropItem "ZombieStuffSpawn"
+ }

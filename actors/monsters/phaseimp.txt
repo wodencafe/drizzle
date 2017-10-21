@@ -1,0 +1,6 @@
+actor PhaseImp2 : PhaseImp 
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}

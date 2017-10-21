@@ -1,0 +1,7 @@
+ 
+actor FemaleSergeant2 : FemaleSergeant
+{
+	+STRIFEDAMAGE
+	DropItem "EasyMonsterDropOrClassDrop"
+	DropItem "ShotgunZombieStuffSpawn"
+}

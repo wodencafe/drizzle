@@ -1,0 +1,6 @@
+actor StoneImp2 : StoneImp
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}

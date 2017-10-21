@@ -1,0 +1,6 @@
+actor StealthFighter2 : StealthFighter
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}

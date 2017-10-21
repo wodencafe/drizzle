@@ -1,0 +1,7 @@
+
+actor ShotgunGuy2 : ShotgunGuy 
+{
+	+STRIFEDAMAGE
+	DropItem "ShotgunZombieStuffSpawn"
+	DropItem "EasyMonsterDropOrClassDrop"
+}

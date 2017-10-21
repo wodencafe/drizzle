@@ -1,0 +1,8 @@
+ 
+
+actor RandomBundleDrop : RandomSpawner
+{
+	DropItem "UnluckyBundleDrop", 255, 1
+	DropItem "MidLuckBundleDrop", 255, 1
+	DropItem "LuckyBundleDrop", 255, 1
+}

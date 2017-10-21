@@ -1,0 +1,5 @@
+ 
+
+#include actors/replacers/weapons/chaingun.txt
+#include actors/replacers/weapons/plasmarifle.txt
+ 

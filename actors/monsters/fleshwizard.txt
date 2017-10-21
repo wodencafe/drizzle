@@ -1,0 +1,7 @@
+ 
+actor FleshWizard2 : FleshWizard
+{
+    +STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}

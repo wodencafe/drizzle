@@ -1,0 +1,24 @@
+ 
+
+actor UnluckyHealthDrop : RandomSpawner
+{
+	DropItem "HealthBonus", 255, 4
+	DropItem "Stimpack", 255, 3
+	DropItem "Medkit", 255, 2
+	DropItem "Medipack", 255, 1
+	//DropItem "BlurSphere", 255, 1
+}
+actor MidLuckHealthDrop : RandomSpawner
+{
+	DropItem "Stimpack", 255, 1
+	DropItem "Medkit", 255, 2
+	DropItem "Medipack", 255, 2
+	DropItem "BlurSphere", 255, 1
+}
+
+actor LuckyHealthDrop : RandomSpawner
+{
+	DropItem "Medkit", 255, 2
+	DropItem "Medipack", 255, 3
+	DropItem "BlurSphere", 255, 1
+}

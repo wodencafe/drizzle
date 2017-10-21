@@ -1,0 +1,8 @@
+ 
+
+actor Cybruiser2 : Cybruiser
+{
+	+STRIFEDAMAGE
+	DropItem "VeryHardMonsterDropOrClassDrop"
+	DropItem "HardMonsterDropOrClassDrop"
+}

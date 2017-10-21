@@ -1,0 +1,4 @@
+ 
+
+#include actors/drops/ammo/class.txt
+#include actors/drops/ammo/luck.txt

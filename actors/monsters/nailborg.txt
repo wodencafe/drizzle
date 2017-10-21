@@ -1,7 +1,7 @@
 actor NailBorg2 : NailBorg
 {
 	+STRIFEDAMAGE
-	DropItem "MediumMonsterSpawnOrClassSpawn", 255
+	DropItem "MediumMonsterDropOrClassDrop"
 	DropItem "ZombieStuffSpawn", 128
 	DropItem "EnergyZombieStuffSpawn", 128
 	DropItem "HealthBonus", 89
@@ -111,7 +111,7 @@ actor NailBorg2 : NailBorg
 			NLBG E 0 A_PlaySound("weapons/nailfire")
 			NLBG F 4 A_CustomMissile("BorgNail2", 36, 8, Random(6, -6), 0, Random(6, -6))
 			NLBG F 0 A_CustomMissile("BorgNail2", 36, 8, Random(6, -6), 0, Random(6, -6))
-			NLBG F 0 A_CustomMissile("BornNail2", 36, 8, Random(6, -6), 0, Random(6, -6))
+			NLBG F 0 A_CustomMissile("BorgNail2", 36, 8, Random(6, -6), 0, Random(6, -6))
 			NLBG F 0 A_CustomMissile("BorgNail2", 36, 8, Random(6, -6), 0, Random(6, -6))
 			NLBG F 0 BRIGHT A_CustomMissile("BorgCenterNail", 36, 8, Random(6, -6), 0, Random(6, -6))
 			NLBG E 10

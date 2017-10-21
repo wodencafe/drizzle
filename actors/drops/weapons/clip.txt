@@ -1,0 +1,10 @@
+ 
+
+actor ClipWeapons : RandomSpawner
+{
+    DropItem "Pistol", 255, 3
+    DropItem "Chaingun2", 255, 2
+    DropItem "Chainsaw", 255, 2
+    DropItem "HeavyChaingun2", 255, 1
+    DropItem "Minigun2", 255, 1
+}

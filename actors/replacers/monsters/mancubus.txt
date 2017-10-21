@@ -1,0 +1,6 @@
+ 
+actor FatsoReplacer : RandomSpawner replaces Fatso
+{
+    DropItem "Fatso2", 255, 1
+
+}

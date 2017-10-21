@@ -1,0 +1,29 @@
+ 
+
+actor STDarkImp2 : STDarkImp 
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}
+
+actor StealthSTDarkImp2 : STDarkImp2 
+{
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthSTDarkImp3 : STDarkImp2
+{
+	RenderStyle Fuzzy
+}
+actor StealthSTDarkImp4 : STDarkImp2
+{
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthSTDarkImp5 : STDarkImp2
+{
+	RenderStyle Add
+	Alpha 0.5
+}

@@ -1,0 +1,9 @@
+ 
+
+
+actor DoomImpReplacer : RandomSpawner replaces DoomImp
+{
+    DropItem "DoomImpVariantDrop", 255, 3
+    DropItem "HumanVariantDrop", 255, 2
+    DropItem "LostSoulVariantDrop", 255, 1
+}

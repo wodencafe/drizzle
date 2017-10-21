@@ -1,0 +1,7 @@
+ 
+
+actor Fatso2 : Fatso
+{
+	DropItem "VeryHardMonsterDropOrClassDrop"
+	DropItem "HardMonsterDropOrClassDrop"
+}

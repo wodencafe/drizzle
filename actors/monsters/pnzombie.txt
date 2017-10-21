@@ -3,6 +3,6 @@ actor PNZombie2 : PNZombie
 {
 
 	+STRIFEDAMAGE
-	DropItem "ZombieStuffDrop", 75
-	DropItem "EasyMonsterDropOrClassDrop", 75
+	DropItem "ZombieStuffSpawn"
+	DropItem "EasyMonsterDropOrClassDrop"
 }

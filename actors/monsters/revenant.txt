@@ -1,8 +1,8 @@
 actor Revenant2 : Revenant 
 {
 	+STRIFEDAMAGE
-	DropItem "HardMonsterSpawnOrClassSpawn", 255
-	DropItem "MediumMonsterSpawnOrClassSpawn", 255
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
 	DropItem "HealthBonus", 89
 	DropItem "ArmorBonus", 89
 	DropItem "Cell", 89

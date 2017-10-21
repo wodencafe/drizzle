@@ -1,0 +1,53 @@
+ 
+
+actor ZombieVariantDrop : RandomSpawner
+{
+    DropItem "ZombieMan2", 255, 5
+    DropItem "StealthZombieMan2", 255, 1
+    DropItem "StealthZombieMan3", 255, 1
+    DropItem "StealthZombieMan4", 255, 1
+    DropItem "StealthZombieMan5", 255, 1
+}
+actor FreezeRifleGuyVariantDrop : RandomSpawner
+{
+    DropItem "FreezeRifleGuy2", 255, 5
+    DropItem "StealthFreezeRifleGuy2", 255, 1
+    DropItem "StealthFreezeRifleGuy3", 255, 1
+    DropItem "StealthFreezeRifleGuy4", 255, 1
+    DropItem "StealthFreezeRifleGuy5", 255, 1
+}
+
+actor ShotgunGuyVariantDrop : RandomSpawner
+{
+    DropItem "ShotgunGuy2", 255, 5
+    DropItem "StealthShotgunGuy2", 255, 1
+    DropItem "StealthShotgunGuy3", 255, 1
+    DropItem "StealthShotgunGuy4", 255, 1
+    DropItem "StealthShotgunGuy5", 255, 1
+    DropItem "QuadShotgunZombie2", 255, 1
+
+}
+actor ChainsawGuyVariantDrop : RandomSpawner
+{
+    DropItem "ChainsawZombie2", 255, 5
+    DropItem "StealthChainsawZombie2", 255, 1
+    DropItem "StealthChainsawZombie3", 255, 1
+    DropItem "StealthChainsawZombie4", 255, 1
+    DropItem "StealthChainsawZombie5", 255, 1
+}
+
+actor HumanVariantDrop : RandomSpawner
+{
+    DropItem "BeamGuy2", 255, 1
+    DropItem "ChaingunGuy2", 255, 1
+    DropItem "ChainsawGuyVariantDrop", 255, 1
+    DropItem "FlamerZombie2", 255, 1
+    DropItem "FreezeRifleGuyVariantDrop", 255, 1
+    DropItem "PlasmaZombie2", 255, 1
+    DropItem "PNZombie2", 255, 1
+    DropItem "ShotgunGuyVariantDrop", 255, 1
+    DropItem "SonicRailgunZombie2", 255, 1
+    DropItem "XimRocketGuy", 255, 1
+    DropItem "ZombieVariantDrop", 255, 1
+    DropItem "ZombieMarine2", 255, 1
+}

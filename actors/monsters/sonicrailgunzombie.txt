@@ -2,6 +2,6 @@
 actor SonicRailgunZombie2: SonicRailgunZombie 
 {
 	+STRIFEDAMAGE
-	DropItem "EnergyZombieStuffDrop", 75
-	DropItem "MediumMonsterDropOrClassDrop", 75
+	DropItem "EnergyZombieStuffSpawn"
+	DropItem "MediumMonsterDropOrClassDrop"
 }

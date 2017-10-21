@@ -1,0 +1,7 @@
+actor EnergyWeapons : RandomSpawner
+{
+    DropItem "FreezeRifle2", 255, 1
+    DropItem "PlasmaRifle2", 255, 3
+    //DropItem "PyroCannon2", 255, 1
+    DropItem "Railgun2", 255, 1
+} 

@@ -1,0 +1,7 @@
+
+actor DemonVariantDrop : RandomSpawner
+{
+    DropItem "DemonTwo", 255, 3
+    DropItem "ShadowSpectre2", 255, 1
+    DropItem "StealthDemon2", 255, 1
+} 

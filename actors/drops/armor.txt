@@ -1,0 +1,3 @@
+
+#include actors/drops/armor/all.txt
+ 

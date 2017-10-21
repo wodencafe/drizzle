@@ -1,0 +1,7 @@
+ 
+
+
+actor RevenantReplacer : RandomSpawner replaces Revenant
+{
+    DropItem "Revenant2", 255, 1
+}

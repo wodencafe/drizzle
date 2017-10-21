@@ -1,8 +1,0 @@
- 
-
-actor PainElemental2 : PainElemental 
-{
-	+STRIFEDAMAGE
-	DropItem "HardMonsterDropOrClassDrop", 75
-	DropItem "HardMonsterDropOrClassDrop", 75
-}

@@ -1,0 +1,28 @@
+ 
+actor NamiDarkImp2 : NamiDarkImp 
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}
+actor StealthNamiDarkImp2 : NamiDarkImp2 
+{
+	RenderStyle Stencil
+	StencilColor black
+	Alpha 0.5
+}
+actor StealthNamiDarkImp3 : NamiDarkImp2
+{
+	RenderStyle Fuzzy
+}
+actor StealthNamiDarkImp4 : NamiDarkImp2
+{
+	RenderStyle Translucent
+	Alpha 0.5
+}
+actor StealthNamiDarkImp5 : NamiDarkImp2
+{
+	RenderStyle Add
+	Alpha 0.5
+}
+

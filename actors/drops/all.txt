@@ -1,0 +1,8 @@
+ 
+#include actors/drops/ammo.txt
+#include actors/drops/armor.txt
+#include actors/drops/bundles.txt
+#include actors/drops/health.txt
+#include actors/drops/items.txt
+#include actors/drops/monsters.txt
+#include actors/drops/weapons.txt

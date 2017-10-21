@@ -1,0 +1,16 @@
+ 
+
+actor CacodemonReplacer : RandomSpawner replaces Cacodemon
+{
+	
+    DropItem "Cacodemon2", 255, 3
+    DropItem "Cacolich2", 255, 2
+    DropItem "EnhancedCacodemon2", 255, 2
+    DropItem "PainElemental2", 255, 1
+    
+    DropItem "StealthCacodemon2", 255, 1
+    DropItem "StealthCacodemon3", 255, 1
+    DropItem "StealthCacodemon4", 255, 1
+    DropItem "StealthCacodemon5", 255, 1
+}
+

@@ -2,8 +2,8 @@
 actor VoidDarkImp2 : VoidDarkImp 
 {
 	+STRIFEDAMAGE
-	DropItem "HardMonsterDropOrClassDrop", 75
-	DropItem "MediumMonsterDropOrClassDrop", 75
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
 }
 actor StealthVoidDarkImp2 : VoidDarkImp2 
 {

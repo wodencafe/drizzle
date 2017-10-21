@@ -1,0 +1,13 @@
+ 
+
+actor PainElementalReplacer : RandomSpawner replaces PainElemental
+{
+    DropItem "PainElemental2", 255, 4
+    DropItem "Cacodemon2", 255, 1
+    DropItem "EnhancedCacodemon2", 255, 1
+    DropItem "Cacolich2", 255, 1
+    DropItem "StealthCacodemon2", 255, 1
+    DropItem "StealthCacodemon3", 255, 1
+    DropItem "StealthCacodemon4", 255, 1
+    DropItem "StealthCacodemon5", 255, 1
+}

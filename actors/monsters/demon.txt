@@ -1,0 +1,13 @@
+ 
+
+actor DemonTwo : Demon 
+{
+	+STRIFEDAMAGE
+	DropItem "EasyMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}
+
+actor StealthDemon2 : DemonTwo
+{
+	+STRIFEDAMAGE
+}

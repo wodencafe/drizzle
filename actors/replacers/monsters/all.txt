@@ -1,0 +1,14 @@
+#include actors/replacers/monsters/lostsoul.txt
+#include actors/replacers/monsters/baronofhell.txt
+#include actors/replacers/monsters/cacodemon.txt
+#include actors/replacers/monsters/cyberdemon.txt
+#include actors/replacers/monsters/doomimp.txt
+#include actors/replacers/monsters/demon.txt
+#include actors/replacers/monsters/painelemental.txt
+#include actors/replacers/monsters/hellknight.txt
+#include actors/replacers/monsters/mancubus.txt
+#include actors/replacers/monsters/revenant.txt
+#include actors/replacers/monsters/chaingunguy.txt
+#include actors/replacers/monsters/shotgunguy.txt
+#include actors/replacers/monsters/zombieman.txt
+ 

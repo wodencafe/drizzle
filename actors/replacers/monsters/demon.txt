@@ -1,0 +1,6 @@
+ 
+
+actor DemonReplacer : RandomSpawner replaces Demon
+{
+    DropItem "DemonVariantDrop", 255, 1
+}

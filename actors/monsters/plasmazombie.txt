@@ -3,6 +3,6 @@
 actor PlasmaZombie2 : PlasmaZombie 
 {
 	+STRIFEDAMAGE
-	DropItem "MediumMonsterDropOrClassDrop", 75
-	DropItem "PlasmaZombieStuffDrop", 75
+	DropItem "MediumMonsterDropOrClassDrop"
+	DropItem "PlasmaZombieStuffSpawn"
 }

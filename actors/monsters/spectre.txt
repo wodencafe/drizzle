@@ -1,0 +1,7 @@
+actor Spectre2 : Spectre 
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}
+ 

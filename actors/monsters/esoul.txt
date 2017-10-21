@@ -1,8 +1,8 @@
 actor ESoul2 : ESoul 
 {
 	+STRIFEDAMAGE
-	DropItem "HardMonsterDropOrClassDrop", 75
-	DropItem "MediumMonsterDropOrClassDrop", 75
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
 }
 actor StealthESoul2 : ESoul2 
 {

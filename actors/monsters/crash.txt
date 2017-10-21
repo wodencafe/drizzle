@@ -1,8 +1,8 @@
 actor Crash3 : crash2
 {
 	+STRIFEDAMAGE
-	DropItem "MediumMonsterSpawnOrClassSpawn", 255
-	DropItem "EnergyZombieStuffSpawn", 255
+	DropItem "MediumMonsterDropOrClassDrop"
+	DropItem "EnergyZombieStuffSpawn"
 	DropItem "HealthBonus", 89
 	DropItem "ArmorBonus", 89
 	DropItem "Cell", 89

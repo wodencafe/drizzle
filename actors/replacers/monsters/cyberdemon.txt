@@ -1,0 +1,6 @@
+ 
+
+actor CyberdemonReplacer : RandomSpawner replaces Cyberdemon
+{
+    DropItem "Cyberdemon2", 255, 1
+}

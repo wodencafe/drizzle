@@ -1,0 +1,10 @@
+actor ExplosiveClassBasedWeaponReplacer : ClassDrop replaces RocketLauncher
+{
+	States
+	{
+		Spawn:
+			//TNT1 A 0 NoDelay A_PrintBold("ExplosiveClassBasedWeaponReplacer")
+			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ACS_ClassExplosiveWeaponsDrop")
+		stop
+	}
+} 

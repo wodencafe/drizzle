@@ -1,0 +1,26 @@
+ 
+
+actor UnluckyWeaponDrop : RandomSpawner
+{
+    DropItem "ClipWeapons", 255, 5
+    DropItem "ShellWeapons", 255, 4
+    DropItem "ExplosiveWeapons", 255, 1
+    DropItem "EnergyWeapons", 255, 1
+    DropItem "SpecialWeapons", 255, 1
+}
+actor MidLuckWeaponDrop : RandomSpawner
+{
+    DropItem "ClipWeapons", 255, 2
+    DropItem "ShellWeapons", 255, 2
+    DropItem "ExplosiveWeapons", 255, 1
+    DropItem "EnergyWeapons", 255, 1
+    DropItem "SpecialWeapons", 255, 1
+}
+actor LuckyWeaponDrop : RandomSpawner
+{
+    DropItem "ClipWeapons", 255, 1
+    DropItem "ShellWeapons", 255, 1
+    DropItem "ExplosiveWeapons", 255, 2
+    DropItem "EnergyWeapons", 255, 2
+    DropItem "SpecialWeapons", 255, 2
+}

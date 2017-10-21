@@ -1,0 +1,125 @@
+ 
+
+actor FreezeRifleZombieStuffDrop : RandomSpawner
+{
+    DropItem "FreezeRifle2", 255, 1
+    DropItem "MidLuckCellAmmoDrop", 255, 1
+}
+actor FreezeRifleZombieStuffSpawn : ClassDrop
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "DropIt")
+		stop
+		DropIt:
+			TNT1 A 0 NoDelay A_SpawnItemEx("FreezeRifleZombieStuffDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+		stop
+	}
+}
+actor ShotgunZombieStuffDrop : RandomSpawner
+{
+    DropItem "ShellWeapons", 255, 1
+    DropItem "MidLuckShellAmmoDrop", 255, 1
+}
+actor ShotgunZombieStuffSpawn : ClassDrop
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "DropIt")
+		stop
+		DropIt:
+			TNT1 A 0 NoDelay A_SpawnItemEx("ShotgunZombieStuffDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+		stop
+	}
+}
+
+actor ZombieStuffDrop : RandomSpawner
+{
+    DropItem "MidLuckClipAmmoDrop", 255, 1
+}
+actor ZombieStuffSpawn : ClassDrop
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "DropIt")
+		stop
+		DropIt:
+			TNT1 A 0 NoDelay A_SpawnItemEx("ZombieStuffDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+		stop
+	}
+}
+actor ChaingunZombieStuffDrop : RandomSpawner
+{
+    DropItem "Chaingun2", 255, 1
+    DropItem "MidLuckClipAmmoDrop", 255, 1
+}
+actor ChaingunZombieStuffSpawn : ClassDrop
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "DropIt")
+		stop
+		DropIt:
+			TNT1 A 0 NoDelay A_SpawnItemEx("ChaingunZombieStuffDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+		stop
+	}
+}
+
+actor PlasmaZombieStuffDrop : RandomSpawner
+{
+    DropItem "PlasmaRifle2", 255, 1
+    DropItem "MidLuckCellAmmoDrop", 255, 1
+}
+actor PlasmaZombieStuffSpawn : ClassDrop
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "DropIt")
+		stop
+		DropIt:
+			TNT1 A 0 NoDelay A_SpawnItemEx("PlasmaZombieStuffDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+		stop
+	}
+}
+
+actor EnergyZombieStuffDrop : RandomSpawner
+{
+    DropItem "EnergyWeapons", 255, 1
+    DropItem "MidLuckCellAmmoDrop", 255, 1
+}
+
+actor EnergyZombieStuffSpawn : ClassDrop
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "DropIt")
+		stop
+		DropIt:
+			TNT1 A 0 NoDelay A_SpawnItemEx("EnergyZombieStuffDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+		stop
+	}
+}
+
+actor RocketZombieStuffDrop : RandomSpawner
+{
+    DropItem "RocketLauncher2", 255, 1
+    DropItem "MidLuckRocketAmmoDrop", 255, 1
+}
+actor RocketZombieStuffSpawn : ClassDrop
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "DropIt")
+		stop
+		DropIt:
+			TNT1 A 0 NoDelay A_SpawnItemEx("RocketZombieStuffDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+		stop
+	}
+}

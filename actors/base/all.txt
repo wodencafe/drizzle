@@ -1,0 +1,13 @@
+ 
+actor ClassDrop
+{
+  +NOBLOCKMAP
+  +NOSECTOR
+  +NOGRAVITY
+  +THRUACTORS
+   Game Doom
+  radius 0
+  height 0
+
+
+}

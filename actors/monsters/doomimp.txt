@@ -3,8 +3,8 @@
 actor DoomImp2 : DoomImp 
 {
 	+STRIFEDAMAGE
-	DropItem "EasyMonsterDropOrClassDrop", 75
-	DropItem "EasyMonsterDropOrClassDrop", 75
+	DropItem "EasyMonsterDropOrClassDrop"
+	DropItem "EasyMonsterDropOrClassDrop"
 }
 actor StealthDoomImp2 : DoomImp2
 {
@@ -25,4 +25,10 @@ actor StealthDoomImp5 : DoomImp2
 {
 	RenderStyle Add
 	Alpha 0.5
+}
+actor FrostImp2 : FrostImp
+{
+	+STRIFEDAMAGE
+	DropItem "MediumMonsterDropOrClassDrop"
+	DropItem "EasyMonsterDropOrClassDrop"
 }

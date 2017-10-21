@@ -1,0 +1,8 @@
+ 
+
+actor EnhancedCacodemon2 : EnhancedCacodemon
+{
+	+STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "HardMonsterDropOrClassDrop"
+}

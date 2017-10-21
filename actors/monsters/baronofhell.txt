@@ -3,6 +3,6 @@
 actor BaronOfHell2 : BaronOfHell 
 {
 	+STRIFEDAMAGE
-	DropItem "HardMonsterDropOrClassDrop", 75
-	DropItem "HardMonsterDropOrClassDrop", 75
+	DropItem "VeryHardMonsterDropOrClassDrop"
+	DropItem "HardMonsterDropOrClassDrop"
 }

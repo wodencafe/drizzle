@@ -1,0 +1,32 @@
+ 
+
+actor EngineerWeaponDrop : RandomSpawner
+{
+    DropItem "EngineerShellWeapons", 255, 1
+    DropItem "RivetGun2", 255, 1
+	DropItem "Rifle2", 255, 1
+	
+}
+actor EngineerShellWeapons : RandomSpawner
+{
+	DropItem "PumpActionShotgun2", 255, 1
+	DropItem "Yellowboy2", 255, 1
+	DropItem "Shotgun2", 255, 1
+	DropItem "SuperShotgun2", 255, 1
+}
+actor DemolitionsExplosiveWeapons : RandomSpawner
+{
+    DropItem "KDIZDGrenadeLauncher", 255, 2
+    DropItem "DGL", 255, 1
+    DropItem "MancubusArmGenerator", 255, 2
+    DropItem "LandMineLayer2", 255, 3
+    DropItem "RocketLauncher2", 255, 3
+    DropItem "STGrenadeLauncher2", 255, 3
+    DropItem "FragGrenade", 255, 3
+}
+
+actor DemolitionsWeaponDrop : RandomSpawner
+{
+    DropItem "DemolitionsExplosiveWeapons", 255, 1
+    DropItem "MicroUzi", 255, 3
+}

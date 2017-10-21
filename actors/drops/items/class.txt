@@ -1,0 +1,20 @@
+
+actor EngineerItemDrop : RandomSpawner
+{
+    DropItem "SentryDrop", 255, 1
+    DropItem "Flares", 255, 1
+    DropItem "FragGrenade", 255, 1
+}
+actor DemolitionsItemDrop : RandomSpawner
+{
+   DropItem "FragGrenade", 255, 1
+    DropItem "ClaymoreMine", 255, 1
+} 
+actor SentryDrop : RandomSpawner
+{
+    DropItem "SentryBox", 255, 5
+    DropItem "SentryNailBox", 255, 1
+    DropItem "SentryFlamerBox", 255, 1
+    DropItem "SentryPlasmaBox", 255, 1
+    DropItem "SentryFreezeBox", 255, 1
+}

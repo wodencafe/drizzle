@@ -2,8 +2,8 @@
 actor PlasmaDemon2 : PlasmaDemon
 {
 	+STRIFEDAMAGE
-	DropItem "MediumMonsterSpawnOrClassSpawn", 255
-	DropItem "MediumMonsterSpawnOrClassSpawn", 255
+	DropItem "MediumMonsterDropOrClassDrop"
+	DropItem "HardMonsterDropOrClassDrop"
 	DropItem "HealthBonus", 89
 	DropItem "ArmorBonus", 89
 	DropItem "Cell", 89

@@ -1,0 +1,8 @@
+ 
+
+actor SpecialWeapons : RandomSpawner
+{
+   DropItem "MancubusArmGenerator", 255, 1
+    DropItem "GasGun2", 255, 1
+    DropItem "ShieldGun2", 255, 1
+}

@@ -1,0 +1,12 @@
+ 
+
+
+actor ShotgunGuyReplacer : RandomSpawner replaces ShotgunGuy
+{
+    DropItem "HumanVariantDrop", 255, 2
+    DropItem "ShotgunGuyVariantDrop", 255, 2
+    DropItem "ZombieVariantDrop", 255, 1
+    DropItem "DoomImpVariantDrop", 255, 1
+    DropItem "DemonVariantDrop", 255, 1
+    DropItem "LostSoulVariantDrop", 255, 1
+}

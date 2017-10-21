@@ -1,0 +1,9 @@
+ 
+
+
+actor SoulHarvester2 : SoulHarvester 
+{
+	+STRIFEDAMAGE
+	DropItem "MediumMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}

@@ -1,0 +1,25 @@
+ 
+actor UnluckyBundleDrop : RandomSpawner
+{
+	DropItem "UnluckyAmmoDrop", 255, 3
+	DropItem "UnluckyWeaponDrop", 255, 2
+	DropItem "UnluckyArmorDrop", 255, 3
+	DropItem "UnluckyHealthDrop", 255, 3
+	DropItem "RandomItemDrop", 255, 1
+}
+actor MidLuckBundleDrop : RandomSpawner
+{
+	DropItem "MidLuckAmmoDrop", 255, 2
+	DropItem "MidLuckWeaponDrop", 255, 1
+	DropItem "MidLuckArmorDrop", 255, 2
+	DropItem "MidLuckHealthDrop", 255,2
+	DropItem "RandomItemDrop", 255, 1
+}
+actor LuckyBundleDrop : RandomSpawner
+{
+	DropItem "LuckyAmmoDrop", 255, 2
+	DropItem "LuckyWeaponDrop", 255, 1
+	DropItem "LuckyArmorDrop", 255, 2
+	DropItem "LuckyHealthDrop", 255, 2
+	DropItem "RandomItemDrop", 255, 1
+}

@@ -1,0 +1,118 @@
+ 
+
+actor EasyMonsterDrop : RandomSpawner
+{
+	DropItem "UnluckyBundleDrop", 255, 4
+	DropItem "MidLuckBundleDrop", 255, 2
+	DropItem "LuckyBundleDrop", 255, 1
+	DropItem "RandomBundleDrop", 255, 1
+}
+actor EasyMonsterDropOrClassDrop : ClassDrop
+{	
+	States
+	{
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "Choice")
+        stop
+        Choice:
+			TNT1 A 0
+			TNT1 A 0 NoDelay A_Jump(256, "MonsterDrop", "ClassDrop")
+		Stop
+		MonsterDrop:
+			TNT1 A 0
+			TNT1 A 0 NoDelay A_SpawnItemEx("EasyMonsterDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+		stop
+		ClassDrop:
+			TNT1 A 0
+			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ClassDrop")
+		stop
+    }
+}
+
+actor MediumMonsterDrop : RandomSpawner
+{
+	DropItem "UnluckyBundleDrop", 255, 1
+	DropItem "MidLuckBundleDrop", 255, 4
+	DropItem "LuckyBundleDrop", 255, 1
+	DropItem "RandomBundleDrop", 255, 1
+}
+actor MediumMonsterDropOrClassDrop : ClassDrop
+{	
+	States
+	{
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "Choice")
+        stop
+        Choice:
+			TNT1 A 0
+			TNT1 A 0 NoDelay A_Jump(256, "MonsterDrop", "ClassDrop")
+		Stop
+		MonsterDrop:
+			TNT1 A 0
+			TNT1 A 0 NoDelay A_SpawnItemEx("MediumMonsterDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+		stop
+		ClassDrop:
+			TNT1 A 0
+			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ClassDrop")
+		stop
+    }
+}
+
+actor HardMonsterDrop : RandomSpawner
+{
+	DropItem "MidLuckBundleDrop", 255, 1
+	DropItem "LuckyBundleDrop", 255, 1
+	DropItem "RandomBundleDrop", 255, 1
+}
+actor HardMonsterDropOrClassDrop : ClassDrop
+{	
+	States
+	{
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "Choice")
+        stop
+        Choice:
+			TNT1 A 0
+			TNT1 A 0 NoDelay A_Jump(256, "MonsterDrop", "ClassDrop")
+		Stop
+		MonsterDrop:
+			TNT1 A 0
+			TNT1 A 0 NoDelay A_SpawnItemEx("HardMonsterDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+		stop
+		ClassDrop:
+			TNT1 A 0
+			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ClassDrop")
+		stop
+    }
+}
+
+actor VeryHardMonsterDrop : RandomSpawner
+{
+	DropItem "LuckyBundleDrop", 255, 2
+	DropItem "RandomBundleDrop", 255, 1
+}
+actor VeryHardMonsterDropOrClassDrop : ClassDrop
+{	
+	States
+	{
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "Choice")
+        stop
+        Choice:
+			TNT1 A 0
+			TNT1 A 0 NoDelay A_Jump(256, "MonsterDrop", "ClassDrop")
+		Stop
+		MonsterDrop:
+			TNT1 A 0
+			TNT1 A 0 NoDelay A_SpawnItemEx("VeryHardMonsterDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+		stop
+		ClassDrop:
+			TNT1 A 0
+			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ClassDrop")
+		stop
+    }
+}

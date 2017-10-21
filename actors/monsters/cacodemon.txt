@@ -3,8 +3,8 @@ actor Cacodemon2 : Cacodemon
 {
 	+STRIFEDAMAGE
 	// Give two shots at a drop
-	DropItem "HardMonsterDropOrClassDrop", 75
-	DropItem "MediumMonsterDropOrClassDrop", 75
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
 }
 
 actor StealthCacodemon2 : Cacodemon2

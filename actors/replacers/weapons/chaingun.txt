@@ -1,0 +1,6 @@
+ 
+
+actor ChaingunReplacer : RandomSpawner replaces Chaingun
+{
+    DropItem "ClipWeapons", 255, 1
+}

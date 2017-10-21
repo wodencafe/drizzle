@@ -3,8 +3,8 @@ actor FreezeRifleGuy2 : FreezeRifleGuy
 {
 
 	+STRIFEDAMAGE
-	DropItem "FreezeRifleZombieStuffDrop", 75
-	DropItem "MediumMonsterDropOrClassDrop", 75
+	DropItem "FreezeRifleZombieStuffSpawn"
+	DropItem "MediumMonsterDropOrClassDrop"
 }
 
 actor StealthFreezeRifleGuy2 : FreezeRifleGuy2

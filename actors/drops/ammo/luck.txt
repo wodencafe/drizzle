@@ -1,0 +1,107 @@
+ 
+
+actor UnluckyAmmoDrop : RandomSpawner
+{
+	DropItem "UnluckyShellAmmoDrop", 255, 1
+	DropItem "UnluckyCellAmmoDrop", 255, 1
+	DropItem "UnluckyClipAmmoDrop", 255, 1
+	DropItem "UnluckyRocketAmmoDrop", 255, 1
+	DropItem "SupplyBox", 255, 1
+}
+
+actor MidLuckAmmoDrop : RandomSpawner
+{
+	DropItem "MidLuckShellAmmoDrop", 255, 1
+	DropItem "MidLuckCellAmmoDrop", 255, 1
+	DropItem "MidLuckClipAmmoDrop", 255, 1
+	DropItem "MidLuckRocketAmmoDrop", 255, 1
+	DropItem "SupplyBox", 255, 1
+	DropItem "Backpack", 255, 1
+}
+
+actor LuckyAmmoDrop : RandomSpawner
+{
+	DropItem "LuckyShellAmmoDrop", 255, 1
+	DropItem "LuckyCellAmmoDrop", 255, 1
+	DropItem "LuckyClipAmmoDrop", 255, 1
+	DropItem "LuckyRocketAmmoDrop", 255, 1
+	DropItem "SupplyBox", 255, 1
+	DropItem "Backpack", 255, 1
+}
+
+actor UnluckyCellAmmoDrop : RandomSpawner
+{
+	DropItem "Cell", 255, 3
+	DropItem "CellKit", 255, 2
+	DropItem "CellPack", 255, 1
+}
+actor MidLuckCellAmmoDrop : RandomSpawner
+{
+	DropItem "Cell", 255, 1
+	DropItem "CellKit", 255, 2
+	DropItem "CellPack", 255, 1
+}
+actor LuckyCellAmmoDrop : RandomSpawner
+{
+	DropItem "Cell", 255, 1
+	DropItem "CellKit", 255, 2
+	DropItem "CellPack", 255, 3
+}
+
+actor UnluckyShellAmmoDrop : RandomSpawner
+{
+	DropItem "Shell", 255, 3
+	DropItem "ShellKit", 255, 2
+	DropItem "ShellBox", 255, 1
+}
+actor MidLuckShellAmmoDrop : RandomSpawner
+{
+	DropItem "Shell", 255, 1
+	DropItem "ShellKit", 255, 2
+	DropItem "ShellBox", 255, 1
+}
+actor LuckyShellAmmoDrop : RandomSpawner
+{
+	DropItem "Shell", 255, 1
+	DropItem "ShellKit", 255, 2
+	DropItem "ShellBox", 255, 3
+}
+
+actor UnluckyClipAmmoDrop : RandomSpawner
+{
+	DropItem "Clip", 255, 3
+	DropItem "BulletKit", 255, 2
+	DropItem "ClipBox", 255, 1
+}
+actor MidLuckClipAmmoDrop : RandomSpawner
+{
+	DropItem "Clip", 255, 1
+	DropItem "BulletKit", 255, 2
+	DropItem "ClipBox", 255, 1
+}
+actor LuckyClipAmmoDrop : RandomSpawner
+{
+	DropItem "Clip", 255, 1
+	DropItem "BulletKit", 255, 2
+	DropItem "ClipBox", 255, 3
+}
+
+actor UnluckyRocketAmmoDrop : RandomSpawner
+{
+	DropItem "RocketAmmo", 255, 3
+	DropItem "RocketPile", 255, 2
+	DropItem "RocketBox", 255, 1
+}
+actor MidLuckRocketAmmoDrop : RandomSpawner
+{
+	DropItem "RocketAmmo", 255, 1
+	DropItem "RocketPile", 255, 2
+	DropItem "RocketBox", 255, 1
+}
+
+actor LuckyRocketAmmoDrop : RandomSpawner
+{
+	DropItem "RocketAmmo", 255, 1
+	DropItem "RocketPile", 255, 2
+	DropItem "RocketBox", 255, 3
+}

@@ -1,0 +1,16 @@
+ 
+
+actor DemolitionsDrop : RandomSpawner
+{
+    DropItem "DemolitionsWeaponDrop", 255, 1
+    DropItem "DemolitionsItemDrop", 255, 2
+    DropItem "DemolitionsAmmoDrop", 255, 3
+}
+ 
+
+actor EngineerDrop : RandomSpawner
+{
+    DropItem "EngineerWeaponDrop", 255, 1
+    DropItem "EngineerItemDrop", 255, 2
+    DropItem "EngineerAmmoDrop", 255, 3
+}

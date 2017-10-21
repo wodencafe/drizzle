@@ -3,15 +3,15 @@
 actor ZombieMan2 : ZombieMan 
 {
 	+STRIFEDAMAGE
-	DropItem "EasyMonsterDropOrClassDrop", 75
-	DropItem "ZombieStuffDrop", 75
+	DropItem "EasyMonsterDropOrClassDrop"
+	DropItem "ZombieStuffSpawn"
 }
 
 
 actor StealthZombieManBase : ZombieMan2
 {
-	DropItem "MediumMonsterDropOrClassDrop", 75
-	DropItem "ZombieStuffDrop", 75
+	DropItem "MediumMonsterDropOrClassDrop"
+	DropItem "ZombieStuffSpawn"
 }
 actor StealthZombieMan2 : StealthZombieManBase
 {

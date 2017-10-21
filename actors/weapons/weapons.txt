@@ -1,0 +1,100 @@
+ 
+
+actor GasGun2: GasGun
+{
+    Weapon.SlotNumber 5
+	Tag "Nerve Gas Launcher"
+}
+actor Rifle2: Rifle
+{
+    Weapon.SlotNumber 2
+	Tag "Basic Rifle"
+}
+actor RivetGun2: RivetGun
+{
+    Weapon.SlotNumber 2
+	Tag "Rivet Gun"
+}
+actor PumpActionShotgun2: PumpActionShotgun
+{
+    Weapon.SlotNumber 3
+	Tag "Pump Action Shotgun"
+}
+actor STGrenadeLauncher2 : STGrenadeLauncher
+{
+    Weapon.SlotNumber 5
+	Tag "Grenade Launcher"
+}
+actor FreezeRifle2 : FreezeRifle
+{
+    Weapon.SlotNumber 6
+	Tag "Freeze Rifle"
+}
+actor Yellowboy2 : Yellowboy
+{
+	Weapon.SlotNumber 3
+	Tag "Winchester Yellow Boy"
+}
+actor HeavyChaingun2 : HeavyChaingun
+{
+    Weapon.SlotNumber 6
+	Tag "Heavy Chaingun"
+}
+actor RocketLauncher2 : RocketLauncher
+{
+    Weapon.SlotNumber 5
+	Tag "Rocket Launcher"
+}
+actor PlasmaRifle2 : PlasmaRifle
+{
+    Weapon.SlotNumber 6
+	Tag "Plasma Rifle"
+}
+
+actor Shotgun2: Shotgun
+{
+    Weapon.SlotNumber 3
+	Tag "Shotgun"
+}
+actor SuperShotgun2: SuperShotgun
+{
+    Weapon.SlotNumber 3
+	Tag "Super Shotgun"
+}
+
+actor LandMineLayer2 : LandMineLayer
+{
+    Weapon.SlotNumber 5
+	Tag "Land Mine Layer"
+    
+}
+
+actor Chaingun2 : Chaingun
+{
+    Weapon.SlotNumber 4
+	Tag "Chaingun"
+}
+
+actor ShieldGun2 : ShieldGun
+{
+    Weapon.SlotNumber 1
+	Tag "Shield Gun"
+}
+
+actor Minigun2 : STMinigun
+{
+    Weapon.SlotNumber 4
+	Tag "Minigun"
+}
+
+actor Railgun2 : STRailgun
+{
+    Weapon.SlotNumber 6
+	Tag "Railgun"
+}
+
+actor GatLaser2 : GatLaser
+{
+    Weapon.SlotNumber 6
+	Tag "Gatling Laser"
+}

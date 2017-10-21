@@ -3,6 +3,6 @@
 actor BeamGuy2 : BeamGuy 
 {
 	+STRIFEDAMAGE
-	DropItem "EnergyZombieStuffDrop", 75
-	DropItem "MediumMonsterDropOrClassDrop", 75
+	DropItem "EnergyZombieStuffSpawn"
+	DropItem "MediumMonsterDropOrClassDrop"
 }

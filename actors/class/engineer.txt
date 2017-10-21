@@ -1,0 +1,15 @@
+ 
+actor Engineer : DoomPlayer
+{
+	Player.DisplayName "Engineer"
+	Player.StartItem "Fist"
+	Player.StartItem "Shotgun2"
+	Player.StartItem "Shell", 20
+	Player.StartItem "Flares", 1
+	Player.StartItem "RivetGun2"
+	Player.StartItem "GasGun2"
+	Player.StartItem "GasBombs", 3
+	Player.StartItem "FragGrenade"
+	Player.StartItem "FragGrenadeAmmo", 1
+	Player.StartItem "Rivets", 25
+}

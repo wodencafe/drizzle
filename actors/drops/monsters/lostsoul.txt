@@ -1,0 +1,15 @@
+ 
+
+actor LostSoulVariantDrop : RandomSpawner
+{
+    DropItem "LostSoul2", 255, 5
+    DropItem "ESoul2", 255, 1
+    DropItem "StealthLostSoul2", 255, 1
+    DropItem "StealthESoul2", 255, 1
+    DropItem "StealthLostSoul3", 255, 1
+    DropItem "StealthESoul3", 255, 1
+    DropItem "StealthLostSoul4", 255, 1
+    DropItem "StealthESoul4", 255, 1
+    DropItem "StealthLostSoul5", 255, 1
+    DropItem "StealthESoul5", 255, 1
+}

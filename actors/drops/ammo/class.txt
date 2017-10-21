@@ -1,0 +1,18 @@
+ 
+
+actor EngineerAmmoDrop : RandomSpawner
+{
+    DropItem "MidLuckShellAmmoDrop", 255, 1
+    DropItem "SupplyBox", 255, 1
+    DropItem "GasBombs", 255, 1
+    DropItem "Rivets", 255, 1
+}
+actor DemolitionsAmmoDrop : RandomSpawner
+{
+    DropItem "MidLuckRocketAmmoDrop", 255, 1
+    DropItem "SupplyBox", 255, 1
+    DropItem "MineAmmo", 255, 1
+    DropItem "DemonBlood", 255, 1
+    DropItem "GasBombs", 255, 1
+    DropItem "Rivets", 255, 1
+}

@@ -1,0 +1,4 @@
+ 
+#include actors/replacers/monsters.txt
+#include actors/replacers/weapons.txt
+ 

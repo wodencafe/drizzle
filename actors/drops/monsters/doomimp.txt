@@ -1,0 +1,68 @@
+ 
+
+actor DarkImpVariantDrop : RandomSpawner
+{
+    DropItem "NamiDarkImpVariantDrop", 255, 1
+    DropItem "STDarkImpVariantDrop", 255, 1
+    DropItem "NetherDarkImpVariantDrop", 255, 1
+    DropItem "VoidDarkImpVariantDrop", 255, 1
+}
+actor NamiDarkImpVariantDrop : RandomSpawner
+{
+    DropItem "NamiDarkImp2", 255, 5
+    DropItem "StealthNamiDarkImp2", 255, 1
+    DropItem "StealthNamiDarkImp3", 255, 1
+    DropItem "StealthNamiDarkImp4", 255, 1
+    DropItem "StealthNamiDarkImp5", 255, 1
+}
+actor STDarkImpVariantDrop : RandomSpawner
+{
+    DropItem "STDarkImp2", 255, 5
+    DropItem "StealthSTDarkImp2", 255, 1
+    DropItem "StealthSTDarkImp3", 255, 1
+    DropItem "StealthSTDarkImp4", 255, 1
+    DropItem "StealthSTDarkImp5", 255, 1
+}
+
+actor NetherDarkImpVariantDrop : RandomSpawner
+{
+    DropItem "NetherDarkImp2", 255, 5
+    DropItem "StealthNetherDarkImp2", 255, 1
+    DropItem "StealthNetherDarkImp3", 255, 1
+    DropItem "StealthNetherDarkImp4", 255, 1
+    DropItem "StealthNetherDarkImp5", 255, 1
+}
+
+actor VoidDarkImpVariantDrop : RandomSpawner
+{
+    DropItem "VoidDarkImp2", 255, 5
+    DropItem "StealthVoidDarkImp2", 125, 1
+    DropItem "StealthVoidDarkImp3", 125, 1
+    DropItem "StealthVoidDarkImp4", 125, 1
+    DropItem "StealthVoidDarkImp5", 125, 1
+} 
+
+actor DoomImpVariantDrop : RandomSpawner
+{
+    DropItem "StandardDoomImpVariantDrop", 255, 1
+    DropItem "FrostImp2", 255, 1
+    DropItem "DevilVariantDrop", 255, 1
+    DropItem "DarkImpVariantDrop", 255, 1
+    DropItem "SoulHarvester2", 255, 1
+    DropItem "Afrit2", 255, 1
+}
+
+actor StandardDoomImpVariantDrop : RandomSpawner
+{
+    DropItem "DoomImp2", 255, 5
+    DropItem "StealthDoomImp2", 255, 1
+    DropItem "StealthDoomImp3", 255, 1
+    DropItem "StealthDoomImp4", 255, 1
+    DropItem "StealthDoomImp5", 255, 1
+}
+
+actor DevilVariantDrop : RandomSpawner
+{
+    DropItem "StealthDevil2", 255, 1
+    DropItem "Devil2", 255, 2
+}

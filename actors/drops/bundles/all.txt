@@ -1,0 +1,6 @@
+ 
+#include actors/drops/bundles/difficulty.txt
+#include actors/drops/bundles/luck.txt
+#include actors/drops/bundles/random.txt
+#include actors/drops/bundles/monster.txt
+#include actors/drops/bundles/class.txt

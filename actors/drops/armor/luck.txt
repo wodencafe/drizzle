@@ -1,0 +1,27 @@
+ 
+
+actor UnluckyArmorDrop : RandomSpawner
+{
+	DropItem "ArmorBonus", 255, 4
+	DropItem "ArmorShard", 255, 3
+	DropItem "SuperArmorBonus", 255, 2
+	DropItem "GreenArmor", 255, 1
+	//DropItem "BlueArmor", 255, 0
+}
+
+actor MidLuckArmorDrop : RandomSpawner
+{
+	DropItem "ArmorBonus", 255, 1
+	DropItem "ArmorShard", 255, 2
+	DropItem "SuperArmorBonus", 255, 3
+	DropItem "GreenArmor", 255, 2
+	DropItem "BlueArmor", 255, 1
+}
+
+actor LuckyArmorDrop : RandomSpawner
+{
+	DropItem "SuperArmorBonus", 255, 1
+	DropItem "GreenArmor", 255, 2
+	DropItem "BlueArmor", 255, 2
+	DropItem "ShieldSphere", 255, 1	
+}

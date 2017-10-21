@@ -1,0 +1,6 @@
+ 
+
+actor BaronOfHellReplacer : RandomSpawner replaces BaronOfHell
+{
+    DropItem "BaronOfHell2", 255, 1
+}

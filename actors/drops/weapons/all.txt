@@ -1,0 +1,9 @@
+ 
+
+#include actors/drops/weapons/class.txt
+#include actors/drops/weapons/clip.txt
+#include actors/drops/weapons/energy.txt
+#include actors/drops/weapons/explosive.txt
+#include actors/drops/weapons/luck.txt
+#include actors/drops/weapons/shell.txt
+#include actors/drops/weapons/special.txt

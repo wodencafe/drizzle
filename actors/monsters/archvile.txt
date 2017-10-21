@@ -1,0 +1,6 @@
+actor ArchVile2 : ArchVile
+{
+    +STRIFEDAMAGE
+	DropItem "HardMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}

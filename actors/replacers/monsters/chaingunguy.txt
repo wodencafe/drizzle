@@ -1,0 +1,7 @@
+ 
+
+
+actor ChaingunGuyReplacer : RandomSpawner replaces ChaingunGuy
+{
+    DropItem "ChaingunGuy2", 255, 1
+}

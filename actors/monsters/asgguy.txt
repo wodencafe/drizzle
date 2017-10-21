@@ -1,0 +1,6 @@
+ACTOR ASGGuy2 : ASGGuy
+{
+    +STRIFEDAMAGE
+	DropItem "EasyMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
+}

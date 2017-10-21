@@ -1,0 +1,5 @@
+
+actor PlasmaRifleReplacer : RandomSpawner replaces PlasmaRifle
+{
+    DropItem "EnergyWeapons", 255, 1
+} 

@@ -2,8 +2,8 @@
 actor ShotgunGuy2 : ShotgunGuy
 {
 	+STRIFEDAMAGE
-	DropItem "EasyMonsterDropOrClassDrop", 75
-	DropItem "ShotgunZombieStuffDrop", 75
+	DropItem "EasyMonsterDropOrClassDrop"
+	DropItem "ShotgunZombieStuffSpawn"
 	
 }
 actor StealthShotgunGuy2 : ShotgunGuy2

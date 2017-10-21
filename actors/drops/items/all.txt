@@ -1,0 +1,4 @@
+
+#include actors/drops/items/class.txt
+#include actors/drops/items/random.txt
+

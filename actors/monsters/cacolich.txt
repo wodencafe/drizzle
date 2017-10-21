@@ -1,0 +1,9 @@
+ 
+
+
+actor Cacolich2 : Cacolich
+{
+    +STRIFEDAMAGE
+	DropItem "VeryHardMonsterDrop"
+	DropItem "HardMonsterDropOrClassDrop"
+}

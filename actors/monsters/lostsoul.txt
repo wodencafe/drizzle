@@ -3,8 +3,8 @@ actor LostSoul2 : LostSoul
 {
 	+STRIFEDAMAGE
 	// Give two shots at a drop
-	DropItem "EasyMonsterDropOrClassDrop", 75
-	DropItem "MediumMonsterDropOrClassDrop", 75
+	DropItem "EasyMonsterDropOrClassDrop"
+	DropItem "MediumMonsterDropOrClassDrop"
 }
 actor StealthLostSoul2 : LostSoul2
 {

@@ -1,0 +1,18 @@
+ 
+
+actor Demolitions : DoomPlayer
+{
+	Player.DisplayName "Demolitions"
+	Player.StartItem "Fist"
+	Player.StartItem "Colt45"
+	Player.StartItem "RocketBox", 10
+	Player.StartItem "Clip", 30
+	Player.StartItem "STGrenadeLauncher2"
+	Player.StartItem "LandMineLayer2"
+	Player.StartItem "MineAmmo", 6
+	Player.StartItem "FragGrenade"
+	Player.StartItem "ClaymoreMine"
+	Player.StartItem "ClaymoreAmmo", 4
+	Player.StartItem "FragGrenadeAmmo", 3
+	Player.StartItem "Flares", 5
+}

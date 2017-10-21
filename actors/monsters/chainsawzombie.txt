@@ -3,8 +3,8 @@
 actor ChainsawZombie2 : ChainsawZombie 
 {
 	+STRIFEDAMAGE
-	DropItem "EasyMonsterDropOrClassDrop", 75
-	DropItem "ZombieStuffDrop", 75
+	DropItem "EasyMonsterDropOrClassDrop"
+	DropItem "ZombieStuffSpawn"
 }
 actor StealthChainsawZombie2 : ChainsawZombie2 
 {

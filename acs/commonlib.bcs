@@ -1,6 +1,17 @@
 #library "commonlib" // Name of the library
 #include "zcommon.acs"
 
+//#include "bcsutils.bcs"
+#include "bcsutils.bcs"
+// This line is optional and makes all BCSUtils functions
+// usable without writing the "BCSUtils." prefix
+//using BCSUtils; 
+// Your project's error handler:
+function void ACSUtilsErrorHandler(int type, int message)
+{
+	Log(s:"error: ", s:message);
+	printbold(s:"error: ", s:message);
+}
 script 1 ENTER
 {
 } 

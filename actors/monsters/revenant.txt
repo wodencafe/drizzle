@@ -9,4 +9,6 @@ actor Revenant2 : Revenant
 	DropItem "Clip", 89
 	DropItem "Shell", 89
 	DropItem "RocketAmmo", 89
+	
+	
 }

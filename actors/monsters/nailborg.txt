@@ -87,7 +87,7 @@ actor NailBorg2 : NailBorg
 			NLBG F 3 BRIGHT A_CustomMissile("BorgNail1", 36, 8, Random(6, -6), 0, Random(6, -6))
 			NLBG E 1 BRIGHT A_FaceTarget
 			NLBG E 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
-			NLBG E 0 A_CheckLOF(2, CLOFF_IGNOREGHOST, 2000 )
+			NLBG E 0 A_CheckLOF(1, CLOFF_IGNOREGHOST, 2000 )
 			Goto Dodge
 			NLBG E 0 A_PlaySound("weapons/nailfire")
 			NLBG F 3 BRIGHT A_CustomMissile("BorgNail1", 36, 8, Random(6, -6), 0, Random(6, -6))

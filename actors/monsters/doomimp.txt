@@ -32,3 +32,27 @@ actor FrostImp2 : FrostImp
 	DropItem "MediumMonsterDropOrClassDrop"
 	DropItem "EasyMonsterDropOrClassDrop"
 }
+actor ShockWaveDoomImp : DoomImp
+{
+  var int user_theta;
+  states
+  {
+  Missile:
+    TROO EF 8 A_FaceTarget
+    TROO G 0 A_SetUserVar("user_theta",0)
+  Shock:
+    TROO G 0 A_CustomMissile("ElectroBlast2",32,0,user_theta)
+    TROO G 0 A_SetUserVar("user_theta",user_theta+5)
+    TROO G 0 A_JumpIf(user_theta==360,"EndShock")
+    Loop
+  EndShock:
+    TROO G 6
+    Goto See
+  }
+}
+
+actor ElectroBlast2 : ElectroBlast
+{
+
+  Damage 3
+}

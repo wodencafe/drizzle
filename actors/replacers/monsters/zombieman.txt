@@ -9,5 +9,4 @@ actor ZombieManReplacer : RandomSpawner replaces ZombieMan
     DropItem "DemonVariantDrop", 255, 1
     DropItem "LostSoulVariantDrop", 255, 1
     DropItem "SpecialMonsterVariantDrop", 255, 1
-    DropItem "ArchVile2", 255, 1
 }

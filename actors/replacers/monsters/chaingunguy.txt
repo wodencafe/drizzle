@@ -3,5 +3,6 @@
 
 actor ChaingunGuyReplacer : RandomSpawner replaces ChaingunGuy
 {
+    DropItem "HumanVariantDrop", 255, 2
     DropItem "ChaingunGuy2", 255, 1
 }

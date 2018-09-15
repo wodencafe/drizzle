@@ -1,27 +1,27 @@
  
-actor GasGun2: GasGun
+actor GasGun2 : GasGun
 {
     Weapon.SlotNumber 5
 	Tag "Nerve Gas Launcher"
 }
-actor Rifle2: Rifle
+actor Rifle2 : Rifle
 {
     Weapon.SlotNumber 2
 	Tag "Basic Rifle"
 }
-actor RivetGun2: RivetGun
+actor RivetGun2 : RivetGun
 {
     Weapon.SlotNumber 2
 	Tag "Rivet Gun"
 }
-actor PumpActionShotgun2: PumpActionShotgun
+actor PumpActionShotgun2 : PumpActionShotgun
 {
     Weapon.SlotNumber 3
 	Tag "Pump Action Shotgun"
 }
-actor AK472: AK47
+actor AK472 : AK47
 {
-    Weapon.SlotNumber 3
+	Weapon.SlotNumber 3
 	Tag "AK47"
 }
 actor STGrenadeLauncher2 : STGrenadeLauncher

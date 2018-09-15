@@ -53,7 +53,7 @@ actor ZombieStuffSpawn : ClassDrop
 }
 actor ChaingunZombieStuffDrop : RandomSpawner
 {
-    DropItem "Chaingun2", 255, 1
+    DropItem "ClipWeapons", 255, 2
     DropItem "MidLuckClipAmmoDrop", 255, 1
 }
 actor ChaingunZombieStuffSpawn : ClassDrop

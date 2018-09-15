@@ -3,4 +3,13 @@
 	+STRIFEDAMAGE
 	DropItem "EasyMonsterDropOrClassDrop"
 	DropItem "ZombieStuffSpawn"
+	  States
+  {
+   Spawn:
+    ZOMW A 2 A_Look
+    ZOMW A 2 A_Wander
+    ZOMW B 2 A_Look
+    ZOMW B 2 A_Wander
+    loop
+	}
  }

@@ -1,16 +1,16 @@
  
 
 
-/*actor DoomImpReplacer : RandomSpawner replaces DoomImp
+actor DoomImpReplacer : RandomSpawner replaces DoomImp
 {
     DropItem "DoomImpVariantDrop", 255, 3
     DropItem "HumanVariantDrop", 255, 2
     DropItem "LostSoulVariantDrop", 255, 1
     DropItem "SpecialMonsterVariantDrop", 255, 1
 }
-*/
 
-actor DoomImpReplacer : ClassDrop replaces DoomImp
+
+/*actor DoomImpReplacer : ClassDrop replaces DoomImp
 {	
 	States
 	{
@@ -21,4 +21,4 @@ actor DoomImpReplacer : ClassDrop replaces DoomImp
 			TNT1 A 0 A_SpawnItemEx("DoomImp2",random(-8,8), random(-8,8), random(-4,4))
 		Stop
     }
-}
+}*/

@@ -19,6 +19,11 @@ actor PumpActionShotgun2: PumpActionShotgun
     Weapon.SlotNumber 3
 	Tag "Pump Action Shotgun"
 }
+actor AK472: AK47
+{
+    Weapon.SlotNumber 3
+	Tag "AK47"
+}
 actor STGrenadeLauncher2 : STGrenadeLauncher
 {
     Weapon.SlotNumber 5

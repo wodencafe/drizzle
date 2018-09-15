@@ -1,9 +1,8 @@
-actor ShotgunClassBasedWeaponReplacer : ClassDrop replaces Shotgun
+actor ShotgunClassBasedWeaponReplacer : ClassDrop
 {
 	States
 	{
 		Spawn:
-			//TNT1 A 0 NoDelay A_PrintBold("ShotgunClassBasedWeaponReplacer")
 			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ACS_ClassShellWeaponsDrop")
 		stop
 	}

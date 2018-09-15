@@ -2,4 +2,6 @@
 
 #include actors/replacers/weapons/chaingun.txt
 #include actors/replacers/weapons/plasmarifle.txt
- 
+#include actors/replacers/weapons/rocketlauncher.txt
+#include actors/replacers/weapons/shotgun.txt
+#include actors/replacers/weapons/supershotgun.txt

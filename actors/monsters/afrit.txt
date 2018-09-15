@@ -11,16 +11,24 @@ actor Afrit2 : Afrit
 	DropItem "RocketAmmo", 89
 	States
 	  {
+	  
 	  Spawn:
 		FRIT A 0
 		FRIT A 0 A_CustomMissile("OrbitComet", 44, 0, 0, 2, 0)
 		FRIT A 0 A_CustomMissile("OrbitComet2", 44, 0, 180, 2, 0)
 		
-		TNT1 A 0 A_GiveInventory ("TestInvisibility")
+		//TNT1 A 0 A_GiveInventory ("BigBoost")
 		FRIT AABB 4 Bright A_Look
-		Goto Spawn+3
+		Goto Idle
 	  Idle:
-		FRIT ABCD 4 Bright A_Look
+		FRIT AA 2 Bright A_Look
+		FRIT AA 2 Bright A_Wander
+		FRIT BB 2 Bright A_Look
+		FRIT BB 2 Bright A_Wander
+		FRIT CC 2 Bright A_Look
+		FRIT CC 2 Bright A_Wander
+		FRIT DD 2 Bright A_Look
+		FRIT DD 2 Bright A_Wander
 		Loop
 	  Dodge: 			
 		  FRIT ABCD 2 Bright A_Chase("Melee", "Missile", CHF_FASTCHASE)
@@ -29,7 +37,13 @@ actor Afrit2 : Afrit
 		  Goto See
 	  See:
 		TNT1 A 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000)
-		FRIT AABBCCDD 2 Bright A_Chase
+		FRIT AA 2 Bright A_Chase
+		  TNT1 A 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000)
+		FRIT BB 2 Bright A_Chase
+		  TNT1 A 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000)
+		FRIT CC 2 Bright A_Chase
+		  TNT1 A 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000)
+		FRIT DD 2 Bright A_Chase
 		Loop
 	  Melee:
 		TNT1 A 0 A_Jump(64, "Melee2")
@@ -83,12 +97,6 @@ actor Afrit2 : Afrit
 		TNT1 A 0 A_JumpIfInTargetLOS("Dodge", 20, JLOSF_DEADNOJUMP, 1000) 
 		TNT1 A 0 A_Jump(128, "Dodge")
 		Goto See
-	  Death:
-		TNT1 A 0 A_NoGravity
-		FRIT I 6 Bright A_Scream
-		FRIT J 5 Bright A_NoBlocking
-		FRIT KLMNOPQR 4 Bright
-		Stop
 	  }
 }
  

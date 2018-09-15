@@ -2,7 +2,6 @@
 #include "zcommon.acs"
 
 //#include "bcsutils.bcs"
-#include "bcsutils.bcs"
 // This line is optional and makes all BCSUtils functions
 // usable without writing the "BCSUtils." prefix
 //using BCSUtils; 
@@ -15,7 +14,14 @@ function void ACSUtilsErrorHandler(int type, int message)
 script 1 ENTER
 {
 } 
-
+script "DelaySecond2" (void)
+{
+	printbold(s:" 1 ");
+	Delay(35);
+	printbold(s:" 2 ");
+	SetActorState(0, "Main");
+	
+}
 script "TSPGetGameSkill" (void)
 {
     print(s:"Hello!");
@@ -25,6 +31,7 @@ script "ExplodeZombie" (void)
 {
     print(s:"Hello!");
     SetResultValue(GetCVar("explodey_zombies"));
+	
 }
 script "ClassDrop" (void)
 {

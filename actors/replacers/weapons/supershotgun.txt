@@ -1,10 +1,9 @@
  
-actor SuperShotgunClassBasedWeaponReplacer : ClassDrop replaces SuperShotgun
+actor SuperShotgunClassBasedWeaponReplacer : ClassDrop
 {
 	States
 	{
 		Spawn:
-			//TNT1 A 0 NoDelay A_PrintBold("SuperShotgunClassBasedWeaponReplacer")
 			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ACS_ClassShellWeaponsDrop")
 		stop
 	}

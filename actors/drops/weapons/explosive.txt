@@ -1,17 +1,7 @@
 
-actor ExplosiveWeapons : RandomSpawner
+actor ExplosiveWeapons : RandomSpawner replaces RocketLauncher
 {
 	DropItem "ExplosiveClassBasedWeaponReplacer", 255, 1
-} 
-actor ExplosiveClassBasedWeaponReplacer : ClassDrop replaces RocketLauncher
-{
-	States
-	{
-		Spawn:
-			//TNT1 A 0 NoDelay A_PrintBold("ExplosiveClassBasedWeaponReplacer")
-			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ACS_ClassExplosiveWeaponsDrop")
-		stop
-	}
 }
 
 actor StandardExplosiveWeapons : RandomSpawner
@@ -20,4 +10,15 @@ actor StandardExplosiveWeapons : RandomSpawner
     DropItem "RocketLauncher2", 255, 3
     DropItem "STGrenadeLauncher2", 255, 1
 	DropItem "FragGrenade", 255, 1
+}
+
+actor DemolitionsExplosiveWeapons : RandomSpawner
+{
+    DropItem "KDIZDGrenadeLauncher", 255, 2
+    DropItem "DGL", 255, 1
+    DropItem "MancubusArmGenerator", 255, 2
+    DropItem "LandMineLayer2", 255, 3
+    DropItem "RocketLauncher2", 255, 3
+    DropItem "STGrenadeLauncher2", 255, 3
+    DropItem "FragGrenade", 255, 3
 }

@@ -59,4 +59,5 @@ actor HumanVariantDrop : RandomSpawner
     DropItem "NailBorg2", 255, 1
     DropItem "ASGGuy2", 255, 1
     DropItem "BlackHoleZombie2", 255, 1
+    DropItem "Crash2", 255, 1
 }

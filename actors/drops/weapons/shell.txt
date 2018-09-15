@@ -1,24 +1,23 @@
- 
-
-actor ShellWeapons : RandomSpawner
+actor ShellWeapons : RandomSpawner replaces Shotgun
 {
 	DropItem "ShotgunClassBasedWeaponReplacer", 255, 1
 }
-actor ShotgunClassBasedWeaponReplacer : ClassDrop replaces Shotgun
+actor SuperShellWeapons : RandomSpawner replaces SuperShotgun
 {
-	States
-	{
-		Spawn:
-			//TNT1 A 0 NoDelay A_PrintBold("ShotgunClassBasedWeaponReplacer")
-			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ACS_ClassShellWeaponsDrop")
-		stop
-	}
+	DropItem "SuperShotgunClassBasedWeaponReplacer", 255, 1
 }
 
 actor StandardShellWeapons : RandomSpawner
 {
-	DropItem "Shotgun2", 255, 20
-	DropItem "SuperShotgun2", 255, 5
+	DropItem "Shotgun2", 255, 5
+	DropItem "SuperShotgun2", 255, 1
 	DropItem "PumpActionShotgun2", 255, 1
 	DropItem "Yellowboy2", 255, 1
+}
+actor EngineerShellWeapons : RandomSpawner
+{
+	DropItem "PumpActionShotgun2", 255, 1
+	DropItem "Yellowboy2", 255, 1
+	DropItem "Shotgun2", 255, 1
+	DropItem "SuperShotgun2", 255, 1
 }

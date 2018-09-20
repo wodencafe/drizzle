@@ -1,0 +1,11 @@
+task foobar {
+    println System.getenv('HOME')
+}
+task buildPk3(type: Zip) {
+    archiveName = 'drizzle.zip'
+    destinationDir = file("${buildDir}/dist")
+    
+    from("${projectDir}/src/main/decorate")
+    from("${projectDir}/src/main/decorate")
+    println "{$projectDir}/src"
+}

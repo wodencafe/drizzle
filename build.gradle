@@ -2,10 +2,13 @@ task foobar {
     println System.getenv('HOME')
 }
 task buildPk3(type: Zip) {
-    archiveName = 'drizzle.zip'
+    archiveName = 'drizzle.pk3'
     destinationDir = file("${buildDir}/dist")
     
+    from("${projectDir}/src/main/acs") {
+        into "acs"
+    }
     from("${projectDir}/src/main/decorate")
-    from("${projectDir}/src/main/decorate")
+    from("${projectDir}/src/main/resources")
     println "{$projectDir}/src"
 }

@@ -1,0 +1,140 @@
+import org.apache.commons.io.FilenameUtils
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        // https://mvnrepository.com/artifact/commons-io/commons-io
+        classpath group: 'commons-io', name: 'commons-io', version: '2.6'
+
+    }
+}
+
+ext {
+    wadsDirPath = "${buildDir}/wads"
+    // The cacheFolder is the location where the Drizzle mod will cache its dependencies.
+    // Drizzle mod uses a HEAD request lookup to verify the last modified time of each
+    // dependency, and if that time does not match the currently downloaded version,
+    // Drizzle mod will re-download the dependency.
+    cacheFolder = new java.io.File(System.getProperty("user.home"), ".drizzle-cache")
+    
+    // Cache the wads here
+    wadCacheFolder = new java.io.File(cacheFolder, "wads")
+    
+    // Cache the (converted) pk3s here
+    pk3CacheFolder = new java.io.File(cacheFolder, "pk3s")
+}
+
+// Logical Workflow:
+// 1. Download the dependencies
+// 2. If they are wads, convert to PK3s
+//  2.a. Launch Docker
+//  2.b. Within Docker, download and build wadext
+//  2.c. Use this Docker Container to convert all of the wads
+//       to their PK3 variants.
+//  2.d. chown the generated PK3 output.
+//  2.e. Merge the wads together
+// 3. Combine with existing Drizzle mod code 
+//    and build a combined pk3 artifact.
+
+task downloadWads {
+    doLast {
+        //for ( e in project.wadMap ) {
+        project.wadMap.entrySet()
+        .parallelStream()
+        .forEach({ e -> 
+            def fileName = getFileNameOfUrl("${e.value}")
+            def secondsEpoch = getSecondsEpochOfUrl("${e.value}")
+            def cachedFileName = getCachedFileName(fileName, secondsEpoch)
+            
+            //println cachedFileName
+            File outputFile = file("${project.ext.wadCacheFolder}/${cachedFileName}")
+            
+            if (!outputFile.exists()) {
+            println 'outputFile is ' + outputFile.getAbsolutePath()
+            println 'downloading ' + outputFile.getAbsolutePath()
+                download {
+                    src "${e.value}"
+                    dest outputFile
+                }
+            }
+            
+        })
+    }
+}
+
+def getCachedFileName(def fileName, def modifiedSeconds) {
+    def returnValue = fileName.replace(".zip", "-" + modifiedSeconds + ".zip")
+    
+    returnValue = returnValue.replace(",filename*", "")
+    
+    return returnValue
+}
+
+def getSecondsEpochOfUrl(def url) {
+    def sb = new StringBuilder()
+    def command = '''date +%s -d "`curl -L --head '''
+    command = command + url
+    command = command + ''' 2>/dev/null | grep "last-modified:" | sed s/last-modified:\\ // | sed s/","//`" '''
+    def proc = ['bash', '-c', command].execute()
+    
+    proc.consumeProcessErrorStream(sb)
+    proc.waitFor()
+    def output = proc.text
+    sb.append(output)
+    return sb.toString().trim()
+}
+def getFileNameOfUrl(def url) {
+    def sb = new StringBuilder()
+    def command = ''' curl -L --head '''
+    command = command + url
+    command = command + ''' 2>/dev/null | grep "filename=" | cut -d'=' -f2 | tr -d '"' '''
+    def proc = ['bash', '-c', command].execute()
+    proc.in.eachLine { line -> sb.append(line) }
+    proc.out.close()
+    proc.waitFor()
+    return sb.toString().trim()
+}
+def ensureCacheExists() {
+    
+    
+    if (!cacheFolder.exists()) {
+        cacheFolder.mkdir()
+    }
+}
+
+task unpackWads {
+    dependsOn downloadWads
+    doLast {
+        //copy {
+            FileCollection collection = layout.files { file("${wadCacheFolder}").listFiles() }
+            
+            mkdir file(wadsDirPath)
+            
+            collection.each {
+                File zipFile = it
+                copy {
+                    from zipTree(zipFile)
+                    include '**/*.wad'
+                    into file(wadsDirPath)
+                    eachFile { details ->
+                        details.setRelativePath new RelativePath(true, details.name)
+                    }
+                    
+                    includeEmptyDirs = false
+                }
+                //def name = it.getName()
+                
+                //def nameWithoutExtension = FilenameUtils.getBaseName(it.getName())
+                
+                //mkdir file("${wadsDirPath}/${nameWithoutExtension}")
+            }
+            /*def zipFile = file('src/dists/dist.zip')
+            def outputDir = file("${buildDir}/unpacked/dist")
+        
+            from zipTree(zipFile)
+            into outputDir*/
+       // }
+    }
+}

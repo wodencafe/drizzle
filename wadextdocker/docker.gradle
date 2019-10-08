@@ -1,0 +1,36 @@
+apply from: 'wads.gradle'
+apply from: 'utils.gradle'
+
+
+task dockerImageBuild (type: Exec) {
+	List<String> args = ['docker', 'build', '--tag', 'wadext-docker', '.']
+
+	commandLine args
+	
+	doLast {
+        //mkdir "wadoutput"
+	}
+}
+List<String> args = ['docker', 'run', '-v', "${buildDir}/wads:/app/wadext/build/wads", '--init', 'wadext-docker']
+
+task dockerImageRun {
+    dependsOn unpackWads
+	dependsOn dockerImageBuild
+	
+	doLast {
+	
+        FileCollection collection = layout.files { file("${project.ext.wadsDirPath}").listFiles() }
+        collection = collection.filter { File f ->
+            f.name.endsWith(".wad")
+        }
+        collection.each {
+            println it
+        }
+		/*exec {
+            
+			List<String> wadArgs = args.collect()
+			wadArgs.add('BlackHoleGenerator.wad')
+			commandLine wadArgs
+		}*/
+	}
+}

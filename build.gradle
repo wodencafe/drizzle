@@ -1,6 +1,8 @@
-task foobar {
-    println System.getenv('HOME')
+allprojects {
+	apply plugin: 'base'
+
 }
+
 task buildPk3(type: Zip) {
     archiveName = 'drizzle.pk3'
     destinationDir = file("${buildDir}/dist")
@@ -10,5 +12,6 @@ task buildPk3(type: Zip) {
     }
     from("${projectDir}/src/main/decorate")
     from("${projectDir}/src/main/resources")
+    from("${buildDir}/wads")
     println "{$projectDir}/src"
 }

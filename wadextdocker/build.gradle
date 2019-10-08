@@ -1,0 +1,95 @@
+plugins {
+  id "de.undercouch.download" version "3.4.3"
+}
+
+apply from: 'docker.gradle'
+
+/*
+task downloadFlameThrower(type: Download) {
+    src 'https://realm667.com/index.php/en/downloads/armory/541-flamethrower/file'
+    dest new File(buildDir, 'wadzips/Flamethrower.zip')
+    
+    doLast {
+        copy {
+            from zipTree(dest)
+            into "${buildDir}/wads/"
+        }
+    }
+}
+
+task downloadFragGrenade(type: Download) {
+}
+task downloadFreezeRifle(type: Download) {
+}
+task downloadGatLaser(type: Download) {
+}
+task downloadGrenadeLauncher(type: Download) {
+}
+task downloadGrenadeLauncherKDiZD(type: Download) {
+}
+task downloadHChaingun(type: Download) {
+}
+task downloadLandMineLayer(type: Download) {
+}
+task downloadLightMachineGun(type: Download) {
+}
+task downloadMancubusArm(type: Download) {
+}
+task downloadMicroUzi(type: Download) {
+}
+task downloadMinigun(type: Download) {
+}
+task downloadNerveGasLauncher(type: Download) {
+}
+task downloadPlasmaShotgun(type: Download) {
+}
+task downloadPulseRifle(type: Download) {
+}
+task downloadPumpActionShotgun(type: Download) {
+}
+task downloadQuadShotgun(type: Download) {
+}
+task downloadRailgun(type: Download) {
+}
+task downloadRifle(type: Download) {
+}
+task downloadRivetGun(type: Download) {
+}
+task downloadShieldGun(type: Download) {
+}
+task downloadSprayCannon(type: Download) {
+}
+task downloadWesternShotgun(type: Download) {
+}
+
+task downloadYellowboy(type: Download) {
+}
+task downloadAfrit(type: Download) {
+}
+task downloadAgathoDemon(type: Download) {
+}
+task downloadArchonOfHell(type: Download) {
+}
+task downloadAutoShotgunGuy(type: Download) {
+}
+task downloadBeamZombie(type: Download) {
+}
+task downloadCacoLich(type: Download) {
+}
+task downloadChainsawZombie(type: Download) {
+}
+task downloadCrash(type: Download) {
+}
+task downloadCyberImp(type: Download) {
+}
+task downloadCybruiser(type: Download) {
+}
+task downloadDarkImpNami(type: Download) {
+}
+task downloadDarkImpNether(type: Download) {
+}
+task downloadDarkImpST(type: Download) {
+}
+task downloadDarkImpVoid(type: Download) {
+}
+*/

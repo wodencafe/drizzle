@@ -1,0 +1,7 @@
+Submitted: Gothic
+Decorate: Gothic
+GLDefs: Gothic
+Sounds: Raven Software (Quake 4), Epic Games (UT 2004)
+Sprites: NMN, Zero Prophet, Reactor, Kronos, Midway
+Sprite Edit: Gothic
+Idea Base: Dark Matter Gun from Quake 4, Borsch from Russian Overkill

@@ -1,0 +1,7 @@
+Name: Black Hole Generator
+Class: 7
+Type: Projectile
+Palette: Custom
+Summon: BHGen
+Ammo Type: Cell
+Altfire: No

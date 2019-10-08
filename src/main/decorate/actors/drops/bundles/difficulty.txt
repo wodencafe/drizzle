@@ -13,19 +13,19 @@ actor EasyMonsterDropOrClassDrop : ClassDrop
 	{
 		Spawn:
 			TNT1 A 0
-			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "Choice")
+			TNT1 A 0 A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "Choice")
         stop
         Choice:
 			TNT1 A 0
-			TNT1 A 0 NoDelay A_Jump(256, "MonsterDrop", "ClassDrop")
+			TNT1 A 0 A_Jump(256, "MonsterDrop", "ClassDrop")
 		Stop
 		MonsterDrop:
 			TNT1 A 0
-			TNT1 A 0 NoDelay A_SpawnItemEx("EasyMonsterDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+			TNT1 A 0 A_SpawnItemEx("EasyMonsterDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
 		stop
 		ClassDrop:
 			TNT1 A 0
-			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ClassDrop")
+			TNT1 A 0 ACS_NamedExecuteWithResult("ClassDrop")
 		stop
     }
 }
@@ -43,19 +43,19 @@ actor MediumMonsterDropOrClassDrop : ClassDrop
 	{
 		Spawn:
 			TNT1 A 0
-			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "Choice")
+			TNT1 A 0 A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "Choice")
         stop
         Choice:
 			TNT1 A 0
-			TNT1 A 0 NoDelay A_Jump(256, "MonsterDrop", "ClassDrop")
+			TNT1 A 0 A_Jump(256, "MonsterDrop", "ClassDrop")
 		Stop
 		MonsterDrop:
 			TNT1 A 0
-			TNT1 A 0 NoDelay A_SpawnItemEx("MediumMonsterDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+			TNT1 A 0 A_SpawnItemEx("MediumMonsterDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
 		stop
 		ClassDrop:
 			TNT1 A 0
-			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ClassDrop")
+			TNT1 A 0 ACS_NamedExecuteWithResult("ClassDrop")
 		stop
     }
 }
@@ -72,19 +72,19 @@ actor HardMonsterDropOrClassDrop : ClassDrop
 	{
 		Spawn:
 			TNT1 A 0
-			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "Choice")
+			TNT1 A 0 A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "Choice")
         stop
         Choice:
 			TNT1 A 0
-			TNT1 A 0 NoDelay A_Jump(256, "MonsterDrop", "ClassDrop")
+			TNT1 A 0 A_Jump(256, "MonsterDrop", "ClassDrop")
 		Stop
 		MonsterDrop:
 			TNT1 A 0
-			TNT1 A 0 NoDelay A_SpawnItemEx("HardMonsterDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+			TNT1 A 0 A_SpawnItemEx("HardMonsterDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
 		stop
 		ClassDrop:
 			TNT1 A 0
-			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ClassDrop")
+			TNT1 A 0 ACS_NamedExecuteWithResult("ClassDrop")
 		stop
     }
 }
@@ -100,19 +100,19 @@ actor VeryHardMonsterDropOrClassDrop : ClassDrop
 	{
 		Spawn:
 			TNT1 A 0
-			TNT1 A 0 NoDelay A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "Choice")
+			TNT1 A 0 A_JumpIf(CallACS("ACS_GetSpawnChance")==1, "Choice")
         stop
         Choice:
 			TNT1 A 0
-			TNT1 A 0 NoDelay A_Jump(256, "MonsterDrop", "ClassDrop")
+			TNT1 A 0 A_Jump(256, "MonsterDrop", "ClassDrop")
 		Stop
 		MonsterDrop:
 			TNT1 A 0
-			TNT1 A 0 NoDelay A_SpawnItemEx("VeryHardMonsterDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
+			TNT1 A 0 A_SpawnItemEx("VeryHardMonsterDrop", 0,0,0,0,0,0,0,SXF_ABSOLUTEPOSITION|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG)
 		stop
 		ClassDrop:
 			TNT1 A 0
-			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("ClassDrop")
+			TNT1 A 0 ACS_NamedExecuteWithResult("ClassDrop")
 		stop
     }
 }
